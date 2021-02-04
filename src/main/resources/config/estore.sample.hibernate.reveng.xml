@@ -4,4 +4,4 @@
 <hibernate-reverse-engineering>
 	<table-filter match-name="ESTORE_TUTORIAL_ALEX"></table-filter>
 	<table-filter match-name="AALEX_MASTER"></table-filter>
-</hibernate-reverse-engineering>
+</hibernate-reverse-engineering> 
