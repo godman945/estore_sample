@@ -21,8 +21,6 @@
 	</properties>
 
 
-
-
 	<!-- spring boot -->
 	<parent>
 		<groupId>org.springframework.boot</groupId>
