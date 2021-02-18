@@ -3,4 +3,5 @@
 
 <hibernate-reverse-engineering>
 	<table-filter match-name="ESTORE_TUTORIAL_AIKO"></table-filter>
+	<table-filter match-name="ESTORE_TUTORIAL_ALEX"></table-filter>
 </hibernate-reverse-engineering> 

@@ -1,0 +1,16 @@
+/*
+ ________  ________  ________  __    __  ________  ________        ______    ______   _______   _______            ______   ________  __       __ 
+|        \|        \|        \|  \  |  \|        \|        \      /      \  /      \ |       \ |       \          /      \ |        \|  \     /  \
+| $$$$$$$$| $$$$$$$$ \$$$$$$$$| $$\ | $$| $$$$$$$$ \$$$$$$$$     |  $$$$$$\|  $$$$$$\| $$$$$$$\| $$$$$$$\        |  $$$$$$\| $$$$$$$$| $$\   /  $$
+| $$__    | $$__       | $$   | $$$\| $$| $$__       | $$ ______ | $$   \$$| $$  | $$| $$__| $$| $$__/ $$ ______ | $$__| $$| $$__    | $$$\ /  $$$
+| $$  \   | $$  \      | $$   | $$$$\ $$| $$  \      | $$|      \| $$      | $$  | $$| $$    $$| $$    $$|      \| $$    $$| $$  \   | $$$$\  $$$$
+| $$$$$   | $$$$$      | $$   | $$\$$ $$| $$$$$      | $$ \$$$$$$| $$   __ | $$  | $$| $$$$$$$\| $$$$$$$  \$$$$$$| $$$$$$$$| $$$$$   | $$\$$ $$ $$
+| $$      | $$_____    | $$   | $$ \$$$$| $$_____    | $$        | $$__/  \| $$__/ $$| $$  | $$| $$              | $$  | $$| $$_____ | $$ \$$$| $$
+| $$      | $$     \   | $$   | $$  \$$$| $$     \   | $$         \$$    $$ \$$    $$| $$  | $$| $$              | $$  | $$| $$     \| $$  \$ | $$
+ \$$       \$$$$$$$$    \$$    \$$   \$$ \$$$$$$$$    \$$          \$$$$$$   \$$$$$$  \$$   \$$ \$$               \$$   \$$ \$$$$$$$$ \$$      \$$
+                                                                                                                                                  
+                                                                                                                                                  
+                                                                                                                                                  
+*/
+(this["webpackJsonpreact-app"]=this["webpackJsonpreact-app"]||[]).push([[3],{707:function(t,e,a){"use strict";a.r(e);var n=a(2),s=a(1),o=a(4),r=a(3),c=a(0),i=a.n(c),p=a(11),l=function(t){Object(o.a)(a,t);var e=Object(r.a)(a);function a(){return Object(n.a)(this,a),e.apply(this,arguments)}return Object(s.a)(a,[{key:"render",value:function(){var t=this;return i.a.createElement("div",{className:"section-promotion-5",id:this.props.id},i.a.createElement(p.default,{to:this.props.action.link,target:this.props.action.target,"data-aa-tracking-id":"".concat(this.props.title),onClick:function(e){t.props.onClick&&t.props.onClick(e)}},i.a.createElement("div",{className:"desktop",style:{backgroundImage:"url(".concat(this.props.image.md,")")}},i.a.createElement("h3",null,this.props.title),i.a.createElement("h6",null,this.props.content),this.props.action.text&&i.a.createElement("div",{className:"promotion-button"},i.a.createElement("span",{className:"text",dangerouslySetInnerHTML:{__html:this.props.action.text||""}}))),i.a.createElement("div",{className:"mobile",style:{backgroundImage:"url(".concat(this.props.image.sm,")")}},i.a.createElement("h3",null,this.props.title),i.a.createElement("h6",null,this.props.content),this.props.action.text&&i.a.createElement("div",{className:"promotion-button"},i.a.createElement("span",{className:"text",dangerouslySetInnerHTML:{__html:this.props.action.text||""}})))))}}]),a}(i.a.Component);e.default=l}}]);
+//# sourceMappingURL=3.chunk.202101051038.js.map

@@ -194,12 +194,12 @@
 			<version>1.46</version>
 		</dependency>
 
-		<!---->
+		<!--
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-security</artifactId>
 		</dependency>
-
+		-->
 		<!-- thymeleaf 相關依賴 -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>

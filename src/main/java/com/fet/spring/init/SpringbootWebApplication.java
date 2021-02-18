@@ -10,7 +10,7 @@ import org.springframework.context.event.EventListener;
 
 @Configuration
 @SpringBootApplication
-@ComponentScan(basePackages = { "com.fet" })
+@ComponentScan(basePackages = { "com.fet","estore_sample.estore" })
 public class SpringbootWebApplication extends SpringBootServletInitializer {
 
 	@Override

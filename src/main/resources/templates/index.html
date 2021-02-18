@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+<html lang="tw" class="">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <script type="text/javascript" async="async" src="./demo/s96393513212251"></script>
+      <title>最新消息內頁</title>
+      <meta name="template" content="news-content-template">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta property="cq:pagemodel_root_url" content="/content/corp/tw.model.json">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="google-site-verification" content="BmmEF9rls6kqnVVYz89cOvG-U44AjcAb83ii3Ra3fqk">
+      <link rel="shortcut icon" href="https://corporate.fetnet.net/favicon.ico">
+      <link rel="stylesheet" href="./demo/corp-react.min.css" type="text/css">
+     
+      <!-- 引入自訂義js -->
+      <script src="js/w3.js"></script>
+
+   </head>
+   <body class="is-corp">
+      <div id="root">
+         <div>
+            <div class="aem-container aem-Grid aem-Grid--12 aem-Grid--default--12"></div>
+            <div></div>
+         </div>
+         <div>
+            <div></div>
+         </div>
+         <div>
+            <div></div>
+         </div>
+         <div>
+            <div></div>
+         </div>
+         <div>
+            <div></div>
+         </div>
+         <div>
+            <div></div>
+         </div>
+         <div>
+            <div></div>
+         </div>
+         <div>
+            <div></div>
+         </div>
+         <div>
+            <div></div>
+         </div>
+         <div>
+            <div class="aem-page page ">
+               <div>
+                  <div class="aem-container aem-Grid aem-Grid--12 aem-Grid--default--12">
+                     <div class=" aem-GridColumn aem-GridColumn--default--12">
+                        <div class="aem-container aem-Grid aem-Grid--12 aem-Grid--default--12">
+                           <div class=" aem-GridColumn aem-GridColumn--default--12">
+                              <header class="fui-header is-corp is-fixed  " id="Header" style="transform: translateY(0px);">
+                                 <nav class="fui-navbar has-shadow is-spaced" role="navigation" aria-label="main navigation">
+                                    <div class="fui-container">
+                                       <div class="fui-navbar-menu">
+                                          <div class="navbar-left"><button class="menu-trigger" tabindex="0"><span></span><span></span><span></span></button></div>
+                                          <div class="navbar-center"><a rel="noopener" id="brand" class="navbar-item brand" href="https://corporate.fetnet.net/content/corp/tw/index.html"><img class="lazyload" data-src="" alt="遠傳"></a></div>
+                                          <div class="navbar-left"><span id="Search" class="navbar-item"><a href="https://www.fetnet.net/content/cbu/tw/search.html?&amp;queryType=H&amp;target=about&amp;page=1" rel="noopener" to="https://www.fetnet.net/content/cbu/tw/search.html?&amp;queryType=H&amp;target=about&amp;page=1"><i class="icon-search is-text-black50"></i></a></span></div>
+                                       </div>
+                                    </div>
+                                 </nav>
+                                 <div class="fui-sidebar " role="menu" tabindex="-1" aria-labelledby="menu-trigger">
+                                    <div class="sidebar-header" id="navigationBar-0">
+                                       <div class="close"></div>
+                                    </div>
+                                    <div class="menu multi-level">
+                                       <div class="item " id="navigationMobile-3-0">
+                                          <div class="menu-header">
+                                             <div class="content">關於遠傳</div>
+                                             <div class="action"><i class="icon-chevron-right"></i></div>
+                                          </div>
+                                          <div class="fui-menu-drawer">
+                                             <div class="fui-menu-drawer-head" id="undefined-0">
+                                                <div class="drawer-bar-left">
+                                                   <div role="button" data-aa-tracking-id="Tab_返回"><i class="icon-chevron-left"></i></div>
+                                                </div>
+                                                <div class="drawer-bar-center">關於遠傳</div>
+                                                <div class="drawer-bar-right">
+                                                   <div role="button" data-aa-tracking-id="Tab_關閉"><i class="icon-close"></i></div>
+                                                </div>
+                                             </div>
+                                             <div class="fui-menu-drawer-body">
+                                                <div class="fui-menu-drawer-sidemenu">
+                                                   <div id="undefined-1">
+                                                      <div class="fui-drawer-item is-active" data-aa-tracking-id="Tab_公司介紹">
+                                                         <img src="./demo/CompanyInformation-active.svg" alt="公司介紹" class="icon is-active "><img src="./demo/CompanyInformation.svg" alt="公司介紹" class="icon ">
+                                                         <div class="text">公司介紹</div>
+                                                      </div>
+                                                   </div>
+                                                   <div id="undefined-2">
+                                                      <div class="fui-drawer-item " data-aa-tracking-id="Tab_重要記事">
+                                                         <img src="./demo/milestones-active.svg" alt="重要記事" class="icon is-active "><img src="./demo/milestones.svg" alt="重要記事" class="icon ">
+                                                         <div class="text">重要記事</div>
+                                                      </div>
+                                                   </div>
+                                                   <div id="undefined-3">
+                                                      <div class="fui-drawer-item " data-aa-tracking-id="Tab_子公司/關係企業">
+                                                         <img src="./demo/affilated-company-active.svg" alt="子公司/關係企業" class="icon is-active "><img src="./demo/affilated-company.svg" alt="子公司/關係企業" class="icon ">
+                                                         <div class="text">子公司/關係企業</div>
+                                                      </div>
+                                                   </div>
+                                                   <div id="undefined-4">
+                                                      <div class="fui-drawer-item " data-aa-tracking-id="Tab_營業規章">
+                                                         <img src="./demo/fetnet-rule-active.svg" alt="營業規章" class="icon is-active "><img src="./demo/fetnet-rule.svg" alt="營業規章" class="icon ">
+                                                         <div class="text">營業規章</div>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                                <div id="undefined-1" class="fui-menu-drawer-container is-active"><a rel="noopener" role="button" title="公司介紹" class="fui-item " href="https://corporate.fetnet.net/content/corp/tw/AboutUs/Introduction.html"><span class="content">公司介紹</span></a><a rel="noopener" role="button" title="品牌理念" class="fui-item " href="https://corporate.fetnet.net/content/corp/tw/AboutUs/ExcellentBrand.html"><span class="content">品牌理念</span></a><a rel="noopener" role="button" title="公司組織" class="fui-item " href="https://corporate.fetnet.net/content/corp/tw/AboutUs/Organization.html"><span class="content">公司組織</span></a><a rel="noopener" role="button" title="經營團隊" class="fui-item " href="https://corporate.fetnet.net/content/corp/tw/AboutUs/ManagerTeam.html"><span class="content">經營團隊</span></a></div>
+                                                <div id="undefined-2" class="fui-menu-drawer-container "><a href="https://corporate.fetnet.net/content/corp/tw/AboutUs/Milestones/Milestones.html" rel="noopener" role="button" to="https://corporate.fetnet.net/content/corp/tw/AboutUs/Milestones/Milestones.html" title="大事紀" class="fui-item "><span class="content">大事紀</span></a><a href="https://corporate.fetnet.net/content/corp/tw/AboutUs/Milestones/Honor.html" rel="noopener" role="button" to="https://corporate.fetnet.net/content/corp/tw/AboutUs/Milestones/Honor.html" title="榮耀事蹟" class="fui-item "><span class="content">榮耀事蹟</span></a></div>
+                                                <div id="undefined-3" class="fui-menu-drawer-container "><a href="https://corporate.fetnet.net/content/corp/tw/AboutUs/Affiliated.html" rel="noopener" role="button" to="https://corporate.fetnet.net/content/corp/tw/AboutUs/Affiliated.html" title="子公司/關係企業首頁" class="fui-item "><span class="content">子公司/關係企業首頁</span></a></div>
+                                                <div id="undefined-4" class="fui-menu-drawer-container "><a href="https://corporate.fetnet.net/content/corp/tw/AboutUs/FETnetRegulations/FETnetRule.html" rel="noopener" role="button" to="https://corporate.fetnet.net/content/corp/tw/AboutUs/FETnetRegulations/FETnetRule.html" title="遠傳營業規章" class="fui-item "><span class="content">遠傳營業規章</span></a><a href="https://corporate.fetnet.net/content/corp/tw/AboutUs/FETnetRegulations/FETnetContract.html" rel="noopener" role="button" to="https://corporate.fetnet.net/content/corp/tw/AboutUs/FETnetRegulations/FETnetContract.html" title="遠傳服務契約" class="fui-item "><span class="content">遠傳服務契約</span></a><a href="https://corporate.fetnet.net/content/corp/tw/content/corp/tw/AboutUs/FETnetRegulations/SparqRule.html" rel="noopener" role="button" to="https://corporate.fetnet.net/content/corp/tw/content/corp/tw/AboutUs/FETnetRegulations/SparqRule.html" title="新世紀資通營業規章" class="fui-item "><span class="content">新世紀資通營業規章</span></a><a href="https://corporate.fetnet.net/content/corp/tw/AboutUs/FETnetRegulations/SparqContract.html" rel="noopener" role="button" to="https://corporate.fetnet.net/content/corp/tw/AboutUs/FETnetRegulations/SparqContract.html" title="新世紀資通服務契約" class="fui-item "><span class="content">新世紀資通服務契約</span></a></div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="item " id="navigationMobile-4-0">
+                                          <div class="menu-header">
+                                             <div class="content">企業社會責任</div>
+                                             <div class="action"><i class="icon-chevron-right"></i></div>
+                                          </div>
+                                          <div class="fui-menu-drawer">
+                                             <div class="fui-menu-drawer-head" id="undefined-0">
+                                                <div class="drawer-bar-left">
+                                                   <div role="button" data-aa-tracking-id="Tab_返回"><i class="icon-chevron-left"></i></div>
+                                                </div>
+                                                <div class="drawer-bar-center">企業社會責任</div>
+                                                <div class="drawer-bar-right">
+                                                   <div role="button" data-aa-tracking-id="Tab_關閉"><i class="icon-close"></i></div>
+                                                </div>
+                                             </div>
+                                             <div class="fui-menu-drawer-body">
+                                                <div class="fui-menu-drawer-sidemenu">
+                                                   <div id="undefined-1">
+                                                      <div class="fui-drawer-item is-active" data-aa-tracking-id="Tab_企業社會責任管理">
+                                                         <img src="./demo/csr-management-active.svg" alt="企業社會責任管理" class="icon is-active "><img src="./demo/csr-management.svg" alt="企業社會責任管理" class="icon ">
+                                                         <div class="text">企業社會責任管理</div>
+                                                      </div>
+                                                   </div>
+                                                   <div id="undefined-2">
+                                                      <div class="fui-drawer-item " data-aa-tracking-id="Tab_環境永續">
+                                                         <img src="./demo/environmental-sustainability-active.svg" alt="環境永續" class="icon is-active "><img src="./demo/environmental-sustainability.svg" alt="環境永續" class="icon ">
+                                                         <div class="text">環境永續</div>
+                                                      </div>
+                                                   </div>
+                                                   <div id="undefined-3">
+                                                      <div class="fui-drawer-item " data-aa-tracking-id="Tab_社會共融">
+                                                         <img src="./demo/csr-society-active.svg" alt="社會共融" class="icon is-active "><img src="./demo/csr-society.svg" alt="社會共融" class="icon ">
+                                                         <div class="text">社會共融</div>
+                                                      </div>
+                                                   </div>
+                                                   <div id="undefined-4">
+                                                      <div class="fui-drawer-item " data-aa-tracking-id="Tab_卓越服務">
+                                                         <img src="./demo/excellent-service-active.svg" alt="卓越服務" class="icon is-active "><img src="./demo/excellent-service.svg" alt="卓越服務" class="icon ">
+                                                         <div class="text">卓越服務</div>
+                                                      </div>
+                                                   </div>
+                                                   <div id="undefined-5">
+                                                      <div class="fui-drawer-item " data-aa-tracking-id="Tab_樂業職場">
+                                                         <img src="./demo/csr-engagement-active.svg" alt="樂業職場" class="icon is-active "><img src="./demo/csr-engagement.svg" alt="樂業職場" class="icon ">
+                                                         <div class="text">樂業職場</div>
+                                                      </div>
+                                                   </div>
+                                                   <div id="undefined-6">
+                                                      <div class="fui-drawer-item " data-aa-tracking-id="Tab_價值共創">
+                                                         <img src="./demo/value-sharing-active.svg" alt="價值共創" class="icon is-active "><img src="./demo/value-sharing.svg" alt="價值共創" class="icon ">
+                                                         <div class="text">價值共創</div>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                                <div id="undefined-1" class="fui-menu-drawer-container is-active"><a rel="noopener" role="button" title="CSR最新消息" class="fui-item " href="https://corporate.fetnet.net/content/corp/tw/CSR/CSRManagement/CSRActivity.html"><span class="content">CSR最新消息</span></a><a rel="noopener" role="button" title="企業社會責任管理" class="fui-item " href="https://corporate.fetnet.net/content/corp/tw/CSR/CSRManagement/SocietyManage.html"><span class="content">企業社會責任管理</span></a><a rel="noopener" role="button" title="利害關係人專區" class="fui-item " href="https://corporate.fetnet.net/content/corp/tw/CSR/Stakeholder/Stakeholder.html"><span class="content">利害關係人專區</span></a><a rel="noopener" role="button" title="影音全記錄" class="fui-item " href="https://corporate.fetnet.net/content/corp/tw/CSR/Video.html"><span class="content">影音全記錄</span></a><a rel="noopener" role="button" title="報告書下載" class="fui-item " href="https://corporate.fetnet.net/content/corp/tw/CSR/ReportDownload.html"><span class="content">報告書下載</span></a><a href="https://www.surveycake.com/s/GlaBQ" rel="noopener" role="button" to="https://www.surveycake.com/s/GlaBQ" title="問卷調查" class="fui-item "><span class="content">問卷調查</span></a></div>
+                                                <div id="undefined-2" class="fui-menu-drawer-container "><a rel="noopener" role="button" title="氣候策略" class="fui-item " href="https://corporate.fetnet.net/content/corp/tw/CSR/EnvironmentalSustainability/climatestrategy.html"><span class="content">氣候策略</span></a><a rel="noopener" role="button" title="環境管理政策" class="fui-item " href="https://corporate.fetnet.net/content/corp/tw/CSR/EnvironmentalSustainability/EcoCSR.html"><span class="content">環境管理政策</span></a><a rel="noopener" role="button" title="綠色價值鏈節能方案" class="fui-item " href="https://corporate.fetnet.net/content/corp/tw/CSR/EnvironmentalSustainability/EcoValue.html"><span class="content">綠色價值鏈節能方案</span></a><a rel="noopener" role="button" title="基地台與電磁波管理" class="fui-item " href="https://corporate.fetnet.net/content/corp/tw/CSR/EnvironmentalSustainability/Ewave.html"><span class="content">基地台與電磁波管理</span></a></div>
+                                                <div id="undefined-3" class="fui-menu-drawer-container "><a rel="noopener" role="button" title="公益關懷策略" class="fui-item " href="https://corporate.fetnet.net/content/corp/tw/CSR/Society/SocietyVision.html"><span class="content">公益關懷策略</span></a><a rel="noopener" role="button" title="環境教育" class="fui-item " href="https://corporate.fetnet.net/content/corp/tw/CSR/Society/EnviromentalEducation.html"><span class="content">環境教育</span></a><a rel="noopener" role="button" title="數位包容" class="fui-item " href="https://corporate.fetnet.net/content/corp/tw/CSR/Society/DigitalInclusion.html"><span class="content">數位包容</span></a><a rel="noopener" role="button" title="社會共好" class="fui-item " href="https://corporate.fetnet.net/content/corp/tw/CSR/Society/SocialEngagement.html"><span class="content">社會共好</span></a></div>
+                                                <div id="undefined-4" class="fui-menu-drawer-container "><a rel="noopener" role="button" title="零距離服務" class="fui-item " href="https://corporate.fetnet.net/content/corp/tw/CSR/ExcellentService/Fetservice.html"><span class="content">零距離服務</span></a><a rel="noopener" role="button" title="顧客隱私保障" class="fui-item " href="https://corporate.fetnet.net/content/corp/tw/CSR/ExcellentService/Privacy.html"><span class="content">顧客隱私保障</span></a></div>
+                                                <div id="undefined-5" class="fui-menu-drawer-container "><a rel="noopener" role="button" title="樂業職場" class="fui-item " href="https://corporate.fetnet.net/content/corp/tw/CSR/Engagement/happiness.html"><span class="content">樂業職場</span></a><a rel="noopener" role="button" title="成長發展" class="fui-item " href="https://corporate.fetnet.net/content/corp/tw/CSR/Engagement/GrowthDevelopment.html"><span class="content">成長發展</span></a><a rel="noopener" role="button" title="福利與成就" class="fui-item " href="https://corporate.fetnet.net/content/corp/tw/CSR/Engagement/WelfareAndArchivement.html"><span class="content">福利與成就</span></a><a rel="noopener" role="button" title="安全健康樂活" class="fui-item " href="https://corporate.fetnet.net/content/corp/tw/CSR/Engagement/SafetyEnvironment.html"><span class="content">安全健康樂活</span></a><a rel="noopener" role="button" title="多元友善職場" class="fui-item " href="https://corporate.fetnet.net/content/corp/tw/CSR/Engagement/Diversity.html"><span class="content">多元友善職場</span></a><a rel="noopener" role="button" title="人權政策" class="fui-item " href="https://corporate.fetnet.net/content/corp/tw/CSR/Engagement/Humanrights.html"><span class="content">人權政策</span></a></div>
+                                                <div id="undefined-6" class="fui-menu-drawer-container "><a rel="noopener" role="button" title="數位創新" class="fui-item " href="https://corporate.fetnet.net/content/corp/tw/CSR/DigitalInnovation/InnovationStrategy.html"><span class="content">數位創新</span></a><a rel="noopener" role="button" title="供應商管理策略" class="fui-item " href="https://corporate.fetnet.net/content/corp/tw/CSR/ValueSharing/SupplyPolicy.html"><span class="content">供應商管理策略</span></a><a rel="noopener" role="button" title="供應商永續管理" class="fui-item " href="https://corporate.fetnet.net/content/corp/tw/CSR/ValueSharing/SupplierManage.html"><span class="content">供應商永續管理</span></a><a rel="noopener" role="button" title="供應商採購" class="fui-item " href="https://corporate.fetnet.net/content/corp/tw/CSR/ValueSharing/Procurement.html"><span class="content">供應商採購</span></a></div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="item " id="navigationMobile-5-0">
+                                          <div class="menu-header">
+                                             <div class="content">公司治理</div>
+                                             <div class="action"><i class="icon-chevron-right"></i></div>
+                                          </div>
+                                          <div class="fui-menu-drawer">
+                                             <div class="fui-menu-drawer-head" id="undefined-0">
+                                                <div class="drawer-bar-left">
+                                                   <div role="button" data-aa-tracking-id="Tab_返回"><i class="icon-chevron-left"></i></div>
+                                                </div>
+                                                <div class="drawer-bar-center">公司治理</div>
+                                                <div class="drawer-bar-right">
+                                                   <div role="button" data-aa-tracking-id="Tab_關閉"><i class="icon-close"></i></div>
+                                                </div>
+                                             </div>
+                                             <div class="fui-menu-drawer-body">
+                                                <div class="fui-menu-drawer-sidemenu">
+                                                   <div id="undefined-1">
+                                                      <div class="fui-drawer-item is-active" data-aa-tracking-id="Tab_公司治理">
+                                                         <img src="./demo/csr-governance-active.svg" alt="公司治理" class="icon is-active "><img src="./demo/csr-governance.svg" alt="公司治理" class="icon ">
+                                                         <div class="text">公司治理</div>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                                <div id="undefined-1" class="fui-menu-drawer-container is-active"><a rel="noopener" role="button" title="公司治理" class="fui-item " href="https://corporate.fetnet.net/content/corp/tw/CSR/Governance/Governance.html"><span class="content">公司治理</span></a><a rel="noopener" role="button" title="董事會" class="fui-item " href="https://corporate.fetnet.net/content/corp/tw/CSR/Governance/BODMeetingInfo.html"><span class="content">董事會</span></a><a rel="noopener" role="button" title="公司章程與相關規定" class="fui-item " href="https://corporate.fetnet.net/content/corp/tw/CSR/Governance/RegulationRule.html"><span class="content">公司章程與相關規定</span></a><a rel="noopener" role="button" title="內部稽核作業情形" class="fui-item " href="https://corporate.fetnet.net/content/corp/tw/CSR/Governance/Inspect.html"><span class="content">內部稽核作業情形</span></a><a rel="noopener" role="button" title="功能性委員會" class="fui-item " href="https://corporate.fetnet.net/content/corp/tw/CSR/Governance/BoardDirectors.html"><span class="content">功能性委員會</span></a><a rel="noopener" role="button" title="運作情形" class="fui-item " href="https://corporate.fetnet.net/content/corp/tw/CSR/Governance/Operation.html"><span class="content">運作情形</span></a></div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="item " id="navigationMobile-6-0">
+                                          <div class="menu-header">
+                                             <div class="content">投資人關係</div>
+                                             <div class="action"><i class="icon-chevron-right"></i></div>
+                                          </div>
+                                          <div class="fui-menu-drawer">
+                                             <div class="fui-menu-drawer-head" id="undefined-0">
+                                                <div class="drawer-bar-left">
+                                                   <div role="button" data-aa-tracking-id="Tab_返回"><i class="icon-chevron-left"></i></div>
+                                                </div>
+                                                <div class="drawer-bar-center">投資人關係</div>
+                                                <div class="drawer-bar-right">
+                                                   <div role="button" data-aa-tracking-id="Tab_關閉"><i class="icon-close"></i></div>
+                                                </div>
+                                             </div>
+                                             <div class="fui-menu-drawer-body">
+                                                <div class="fui-menu-drawer-sidemenu">
+                                                   <div id="undefined-1">
+                                                      <div class="fui-drawer-item is-active" data-aa-tracking-id="Tab_財務資訊">
+                                                         <img src="./demo/financials-active.svg" alt="財務資訊" class="icon is-active "><img src="./demo/financials.svg" alt="財務資訊" class="icon ">
+                                                         <div class="text">財務資訊</div>
+                                                      </div>
+                                                   </div>
+                                                   <div id="undefined-2">
+                                                      <div class="fui-drawer-item " data-aa-tracking-id="Tab_公司年報">
+                                                         <img src="./demo/annual-report-active.svg" alt="公司年報" class="icon is-active "><img src="./demo/annual-report.svg" alt="公司年報" class="icon ">
+                                                         <div class="text">公司年報</div>
+                                                      </div>
+                                                   </div>
+                                                   <div id="undefined-3">
+                                                      <div class="fui-drawer-item " data-aa-tracking-id="Tab_投資人行事曆">
+                                                         <img src="./demo/investor-calendar-active.svg" alt="投資人行事曆" class="icon is-active "><img src="./demo/investor-calendar.svg" alt="投資人行事曆" class="icon ">
+                                                         <div class="text">投資人行事曆</div>
+                                                      </div>
+                                                   </div>
+                                                   <div id="undefined-4">
+                                                      <div class="fui-drawer-item " data-aa-tracking-id="Tab_股東專欄">
+                                                         <img src="./demo/shareholder-service-active.svg" alt="股東專欄" class="icon is-active "><img src="./demo/shareholder-service.svg" alt="股東專欄" class="icon ">
+                                                         <div class="text">股東專欄</div>
+                                                      </div>
+                                                   </div>
+                                                   <div id="undefined-5">
+                                                      <div class="fui-drawer-item " data-aa-tracking-id="Tab_問答集">
+                                                         <img src="./demo/faq-active.svg" alt="問答集" class="icon is-active "><img src="./demo/faq.svg" alt="問答集" class="icon ">
+                                                         <div class="text">問答集</div>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                                <div id="undefined-1" class="fui-menu-drawer-container is-active"><a rel="noopener" role="button" title="財務資料報告" class="fui-item " href="https://corporate.fetnet.net/content/corp/tw/InvestorRelations/Financials/MonFinancialPoint.html"><span class="content">財務資料報告</span></a><a rel="noopener" role="button" title="營運資料報告" class="fui-item " href="https://corporate.fetnet.net/content/corp/tw/InvestorRelations/Financials/MonFinancialReport.html"><span class="content">營運資料報告</span></a><a rel="noopener" role="button" title="公司債及信用評等" class="fui-item " href="https://corporate.fetnet.net/content/corp/tw/InvestorRelations/Financials/DebtCredit.html"><span class="content">公司債及信用評等</span></a></div>
+                                                <div id="undefined-2" class="fui-menu-drawer-container "><a rel="noopener" role="button" title="公司年報首頁" class="fui-item " href="https://corporate.fetnet.net/content/corp/tw/InvestorRelations/AnnualReport.html"><span class="content">公司年報首頁</span></a></div>
+                                                <div id="undefined-3" class="fui-menu-drawer-container "><a rel="noopener" role="button" title="投資人行事曆首頁" class="fui-item " href="https://corporate.fetnet.net/content/corp/tw/InvestorRelations/Stakeholdercalendar.html"><span class="content">投資人行事曆首頁</span></a></div>
+                                                <div id="undefined-4" class="fui-menu-drawer-container "><a rel="noopener" role="button" title="股價查詢" class="fui-item " href="https://corporate.fetnet.net/content/corp/tw/InvestorRelations/ShareholderServices/StockPrice.html"><span class="content">股價查詢</span></a><a rel="noopener" role="button" title="股東會" class="fui-item " href="https://corporate.fetnet.net/content/corp/tw/InvestorRelations/ShareholderServices/Shareholdermeeting.html"><span class="content">股東會</span></a><a rel="noopener" role="button" title="歷年股利分派" class="fui-item " href="https://corporate.fetnet.net/content/corp/tw/InvestorRelations/ShareholderServices/Dividend.html"><span class="content">歷年股利分派</span></a><a rel="noopener" role="button" title="股務聯絡人" class="fui-item " href="https://corporate.fetnet.net/content/corp/tw/InvestorRelations/ShareholderServices/Stockcontact.html"><span class="content">股務聯絡人</span></a><a rel="noopener" role="button" title="重大訊息公告" class="fui-item " href="https://corporate.fetnet.net/content/corp/tw/InvestorRelations/ShareholderServices/Announcements.html"><span class="content">重大訊息公告</span></a></div>
+                                                <div id="undefined-5" class="fui-menu-drawer-container "><a rel="noopener" role="button" title="問答集首頁" class="fui-item " href="https://corporate.fetnet.net/content/corp/tw/InvestorRelations/FAQ.html"><span class="content">問答集首頁</span></a></div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div>
+                                          <a href="https://www.fetnet.net/5G/index.html" rel="noopener" to="https://www.fetnet.net/5G/index.html" class="item">
+                                             <div class="menu-header">
+                                                <div class="content">心5G體驗</div>
+                                             </div>
+                                          </a>
+                                       </div>
+                                       <div>
+                                          <a rel="noopener" class="item" href="https://corporate.fetnet.net/content/corp/tw/LatestNews/NewsReleases.html">
+                                             <div class="menu-header">
+                                                <div class="content">最新消息</div>
+                                             </div>
+                                          </a>
+                                       </div>
+                                       <div>
+                                          <a rel="noopener" class="item" href="https://corporate.fetnet.net/content/corp/tw/join-us.html">
+                                             <div class="menu-header">
+                                                <div class="content">菁英招募</div>
+                                             </div>
+                                          </a>
+                                       </div>
+                                    </div>
+                                    <div class="menu-footer">
+                                       <div><a href="https://www.fetnet.net/content/cbu/tw/index.html" rel="noopener" role="button" to="https://www.fetnet.net/content/cbu/tw/index.html" title="遠傳電信網站" class="fui-item "><img src="./demo/ebu-home.svg" alt="遠傳電信網站"><span class="content">遠傳電信網站</span></a></div>
+                                       <div><a href="https://enterprise.fetnet.net/content/ebu/tw/index/micro-business.html" rel="noopener" role="button" to="https://enterprise.fetnet.net/content/ebu/tw/index/micro-business.html" title="遠傳商務網站" class="fui-item "><img src="./demo/cbu-home.svg" alt="遠傳商務網站"><span class="content">遠傳商務網站</span></a></div>
+                                       <div><a href="https://corporate.fetnet.net/content/corp/tw/index.html" rel="noopener" role="button" to="https://corporate.fetnet.net/content/corp/tw/index.html" title="關於遠傳" class="fui-item lazyload"><img src="./demo/global.png" alt="關於遠傳"><span class="content">關於遠傳</span></a></div>
+                                    </div>
+                                 </div>
+                                 <div class="fui-menu-container" role="menu" tabindex="-1" aria-labelledby="menu-trigger">
+                                    <div class="fui-menu-header">
+                                       <div class="fui-container">
+                                          <a rel="noopener" class="navbar-item brand" href="https://corporate.fetnet.net/content/corp/tw/index.html"><img class="lazyload" data-src="" alt="遠傳"></a>
+                                          <div><button class="close"><i class="icon-close"></i></button></div>
+                                       </div>
+                                    </div>
+                                    <div class="fui-menu-body">
+                                       <div class="fui-container">
+                                          <div class="MuiGrid-root MuiGrid-container">
+                                             <div class="MuiGrid-root menu-header MuiGrid-item MuiGrid-grid-md-2">
+                                                <div class="menu-content">
+                                                   <div class="list">
+                                                      <div>
+                                                         <div role="button" class="fui-item paded is-active"><span class="content">關於遠傳</span></div>
+                                                      </div>
+                                                      <div>
+                                                         <div role="button" class="fui-item paded "><span class="content">企業社會責任</span></div>
+                                                      </div>
+                                                      <div>
+                                                         <div role="button" class="fui-item paded "><span class="content">公司治理</span></div>
+                                                      </div>
+                                                      <div>
+                                                         <div role="button" class="fui-item paded "><span class="content">投資人關係</span></div>
+                                                      </div>
+                                                      <div>
+                                                         <div role="button" class="fui-item paded "><span class="content">心5G體驗</span></div>
+                                                      </div>
+                                                      <div>
+                                                         <div role="button" class="fui-item paded "><span class="content">最新消息</span></div>
+                                                      </div>
+                                                      <div>
+                                                         <div role="button" class="fui-item paded "><span class="content">菁英招募</span></div>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                                <div class="menu-action">
+                                                   <div><a href="https://www.fetnet.net/content/cbu/tw/index.html" rel="noopener" role="button" to="https://www.fetnet.net/content/cbu/tw/index.html" title="遠傳電信網站" class="fui-item "><img src="./demo/ebu-home.svg" alt="遠傳電信網站"><span class="content">遠傳電信網站</span></a></div>
+                                                   <div><a href="https://enterprise.fetnet.net/content/ebu/tw/index/micro-business.html" rel="noopener" role="button" to="https://enterprise.fetnet.net/content/ebu/tw/index/micro-business.html" title="遠傳商務網站" class="fui-item "><img src="./demo/cbu-home.svg" alt="遠傳商務網站"><span class="content">遠傳商務網站</span></a></div>
+                                                   <div><a href="https://corporate.fetnet.net/content/corp/tw/index.html" rel="noopener" role="button" to="https://corporate.fetnet.net/content/corp/tw/index.html" title="關於遠傳" class="fui-item lazyload"><img src="./demo/global.png" alt="關於遠傳"><span class="content">關於遠傳</span></a></div>
+                                                </div>
+                                             </div>
+                                             <div class="MuiGrid-root menu-body MuiGrid-item MuiGrid-grid-sm-10 MuiGrid-grid-md-10 MuiGrid-grid-lg-8 MuiGrid-grid-xl-10">
+                                                <div class="menu-content">
+                                                   <div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-2">
+                                                      <div class="MuiGrid-root mb-2 MuiGrid-item MuiGrid-grid-md-4" id="navigationBar-1-2">
+                                                         <h6>公司介紹</h6>
+                                                         <a rel="noopener" role="button" title="公司介紹" class="fui-item item" href="https://corporate.fetnet.net/content/corp/tw/AboutUs/Introduction.html"><span class="content">公司介紹</span></a><a rel="noopener" role="button" title="品牌理念" class="fui-item item" href="https://corporate.fetnet.net/content/corp/tw/AboutUs/ExcellentBrand.html"><span class="content">品牌理念</span></a><a rel="noopener" role="button" title="公司組織" class="fui-item item" href="https://corporate.fetnet.net/content/corp/tw/AboutUs/Organization.html"><span class="content">公司組織</span></a><a rel="noopener" role="button" title="經營團隊" class="fui-item item" href="https://corporate.fetnet.net/content/corp/tw/AboutUs/ManagerTeam.html"><span class="content">經營團隊</span></a>
+                                                      </div>
+                                                      <div class="MuiGrid-root mb-2 MuiGrid-item MuiGrid-grid-md-4" id="navigationBar-1-3">
+                                                         <h6>重要記事</h6>
+                                                         <a href="https://corporate.fetnet.net/content/corp/tw/AboutUs/Milestones/Milestones.html" rel="noopener" role="button" to="https://corporate.fetnet.net/content/corp/tw/AboutUs/Milestones/Milestones.html" title="大事紀" class="fui-item item"><span class="content">大事紀</span></a><a href="https://corporate.fetnet.net/content/corp/tw/AboutUs/Milestones/Honor.html" rel="noopener" role="button" to="https://corporate.fetnet.net/content/corp/tw/AboutUs/Milestones/Honor.html" title="榮耀事蹟" class="fui-item item"><span class="content">榮耀事蹟</span></a>
+                                                      </div>
+                                                      <div class="MuiGrid-root mb-2 MuiGrid-item MuiGrid-grid-md-4" id="navigationBar-1-4">
+                                                         <h6>子公司/關係企業</h6>
+                                                         <a href="https://corporate.fetnet.net/content/corp/tw/AboutUs/Affiliated.html" rel="noopener" role="button" to="https://corporate.fetnet.net/content/corp/tw/AboutUs/Affiliated.html" title="子公司/關係企業首頁" class="fui-item item"><span class="content">子公司/關係企業首頁</span></a>
+                                                      </div>
+                                                      <div class="MuiGrid-root mb-2 MuiGrid-item MuiGrid-grid-md-4" id="navigationBar-1-5">
+                                                         <h6>營業規章</h6>
+                                                         <a href="https://corporate.fetnet.net/content/corp/tw/AboutUs/FETnetRegulations/FETnetRule.html" rel="noopener" role="button" to="https://corporate.fetnet.net/content/corp/tw/AboutUs/FETnetRegulations/FETnetRule.html" title="遠傳營業規章" class="fui-item item"><span class="content">遠傳營業規章</span></a><a href="https://corporate.fetnet.net/content/corp/tw/AboutUs/FETnetRegulations/FETnetContract.html" rel="noopener" role="button" to="https://corporate.fetnet.net/content/corp/tw/AboutUs/FETnetRegulations/FETnetContract.html" title="遠傳服務契約" class="fui-item item"><span class="content">遠傳服務契約</span></a><a href="https://corporate.fetnet.net/content/corp/tw/content/corp/tw/AboutUs/FETnetRegulations/SparqRule.html" rel="noopener" role="button" to="https://corporate.fetnet.net/content/corp/tw/content/corp/tw/AboutUs/FETnetRegulations/SparqRule.html" title="新世紀資通營業規章" class="fui-item item"><span class="content">新世紀資通營業規章</span></a><a href="https://corporate.fetnet.net/content/corp/tw/AboutUs/FETnetRegulations/SparqContract.html" rel="noopener" role="button" to="https://corporate.fetnet.net/content/corp/tw/AboutUs/FETnetRegulations/SparqContract.html" title="新世紀資通服務契約" class="fui-item item"><span class="content">新世紀資通服務契約</span></a>
+                                                      </div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="menu-extra" id="navigationBar-1-ad">
+                                             <div class="section-promotion-5">
+                                                <a href="https://promotion.fetnet.net/Pmt/fwa/" rel="noopener" to="https://promotion.fetnet.net/Pmt/fwa/" target="_self" data-aa-tracking-id="智慧生活 輕鬆動動口 ">
+                                                   <div class="desktop" style="background-image: url(&quot;/content/dam/fetnet/user_resource/cbu/images/ad/202102/06/menu-right-AD-240x700-Y21Feb_fwa_50K.jpg&quot;);">
+                                                      <h3>智慧生活 輕鬆動動口 </h3>
+                                                      <h6>月付$699 智慧家庭組合$0</h6>
+                                                      <div class="promotion-button"><span class="text">了解更多</span></div>
+                                                   </div>
+                                                   <div class="mobile" style="background-image: url(&quot;/content/dam/fetnet/user_resource/cbu/images/ad/202102/06/footer_memuright_mobile_750x540-Y21Feb_fwa_50K.jpg&quot;);">
+                                                      <h3>智慧生活 輕鬆動動口 </h3>
+                                                      <h6>月付$699 智慧家庭組合$0</h6>
+                                                      <div class="promotion-button"><span class="text">了解更多</span></div>
+                                                   </div>
+                                                </a>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </header>
+                              <div></div>
+                           </div>
+                           <div class=" aem-GridColumn aem-GridColumn--default--12">
+                              <main>
+                                 <div class=" aem-GridColumn aem-GridColumn--default--12">
+                                    <div class="ebu-news news-content" style="overflow: auto;">
+                                       <div>
+                                          <div class="aem-container aem-Grid aem-Grid--12 aem-Grid--default--12">
+                                             <div class=" aem-GridColumn aem-GridColumn--default--12">
+                                                <div class="fui-nav-anchor">
+                                                   <div class="fui-container">
+                                                      <div class="content">
+                                                         <div class="subtitle"></div>
+                                                         <div class="page-anchor"></div>
+                                                      </div>
+                                                      <div class="extra d-flex"></div>
+                                                   </div>
+                                                </div>
+                                                <div></div>
+                                             </div>
+                                             <div class=" aem-GridColumn aem-GridColumn--default--12">
+                                                <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"首頁","item":"https://www.fetnet.net/content/corp/tw.html"},{"@type":"ListItem","position":2,"name":"最新消息","item":"https://www.fetnet.net/content/corp/tw/LatestNews.html"},{"@type":"ListItem","position":3,"name":"最新消息內頁","item":"https://www.fetnet.net/content/corp/tw/LatestNews/LatestNews_Contents.html"}]}</script>
+                                                <meta name="WT.cg_n" content="首頁">
+                                                <meta name="WT.cg_s" content="最新消息">
+                                                <meta name="WT.cg_sub" content="最新消息內頁">
+                                                <meta name="WT.cg_sub2" content="na">
+                                                <meta name="WT.cg_sub3" content="na">
+                                                <section class="fui-breadcrumb-container" style="top: 45px;">
+                                                   <div class="fui-container">
+                                                      <ul class="fui-breadcrumb is-black">
+                                                         <li><a rel="noopener" href="https://corporate.fetnet.net/">首頁</a></li>
+                                                         <li><a rel="noopener" href="https://corporate.fetnet.net/content/corp/tw/LatestNews.html">最新消息</a></li>
+                                                         <li><a rel="noopener" href="https://corporate.fetnet.net/content/corp/tw/LatestNews/LatestNews_Contents.html">最新消息內頁</a></li>
+                                                      </ul>
+                                                   </div>
+                                                </section>
+                                                <div></div>
+                                             </div>
+                                          </div>
+                                          <div></div>
+                                       </div>
+                                       <div class="fui-container news-wrapper" style="width: 40%;">
+                                          <div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-4">
+                                             <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-12 MuiGrid-grid-md-8">
+                                                <div>
+                                                   <div class="aem-container aem-Grid aem-Grid--12 aem-Grid--default--12">
+                                                      <div class=" aem-GridColumn aem-GridColumn--default--12">
+                                                         <div class="subtitle news-subtitle">2021/02/04 <span>公司</span></div>
+                                                         <h2>Speedtest台灣5G報告首度出爐！再獲國際權威認證 遠傳5G網速全台第一</h2>
+                                                         <div class="corp-news-content">
+                                                            <p><b>加持台灣網速挺進全球第16名！</b></p>
+                                                            <p>國際網路測速權威Ookla首度公布「Speedtest台灣5G報告」，台灣行動網速持續提升，5G開台更挹注強勁成長動能，2019至2020年台灣3G、4G、5G綜合「下載網速」提升幅度高達30.4%，躍居全球第16名！此外，2020 Q4台灣「5G下載網速」中位數達260.01Mbps，相較於「4G下載網速」大幅高出522%。遠傳5G網速無論下載、上傳、延遲均為全台第一，坐穩「5G網速冠軍」；遠傳「5G下載速度」以315.45Mbps奪冠，帶動台灣網速升級，目標年底達90%涵蓋率，讓每位用戶都能享受全台第一、全球名列前矛的5G網速！</p>
+                                                            <p>遠傳網路建設一路超前佈署，自4G時代即引進「客戶體驗管理系統」(CEM, Customer Experience Management)，透過AI分析不同時段、日期、應用服務的網路使用情境，進而配置適當的網路資源，達成效益極大化。例如運用AI分析平日白天的科學園區、夜晚的高密度住宅區、假日熱門景點等不同情境，依需求規劃網路建設。5G時代除了利用AI大數據分析進行「基地台選址」，更自行研發「自動化5G帶站平台」，搭配每建設一座5G基地台就會進行「4G/5G單站調整優化」作業。用心打造的網路品質，一舉囊括兩大國際權威機構Speedtest、Opensignal認證「5G網速冠軍」的殊榮！</p>
+                                                            <p>根據「Speedtest台灣5G報告」，台灣行動網速受益於5G技術而穩定上升，全球綜合網速(含3G、4G、5G)排名躍升至第16名，相較於2019年1月報告，一舉前進13名！此外，台灣各大都會區5G下載網速也首度出爐，網速結果均接近台灣「5G下載網速」中位數260.01Mbps，包含桃園市265.01 Mbps、台北市261.79 Mbps、台中市260.20 Mbps、台南市241.72 Mbps、新北市236.69 Mbps。遠傳5G佈建初期即以六都、百大商圈等人口密集的都會區為目標，並逐步擴大涵蓋範圍至住宅區、商業區、熱門景點、大眾運輸，預計年底達全台90%人口涵蓋率。</p>
+                                                            <p>國際權威機構接連認證遠傳「5G網速全台第一」，顯示遠傳5G「建設用心、服務貼心、體驗最順心」不只是口號，而是現在進行式的品牌承諾。遠傳將持續用心建設，並佐以AI加持，讓用戶能享受世界級的5G優質網路，體驗5G創新服務的樂趣！</p>
+                                                         </div>
+                                                         <div></div>
+                                                      </div>
+                                                   </div>
+                                                   <div></div>
+                                                </div>
+                                             </div>
+                                             <div class="MuiGrid-root selected-news MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-12 MuiGrid-grid-md-4">
+                                                <div>
+                                                <!-- ALEX ADD -->
+                                                
+												  <div id="alex_div">
+													
+                                                   <div class="aem-container aem-Grid aem-Grid--12 aem-Grid--default--12">
+                                                      <div class=" aem-GridColumn aem-GridColumn--default--12">
+                                                         <div class="selected-article">
+                                                            <div class="head">
+                                                               <h6>最新消息</h6>
+                                                            </div>
+                                                            <ul>
+                                                               <li>
+                                                                  <a rel="noopener" href="javascript:void(0)">
+                                                                     <div class="top"><small>業務</small><small>2021/02/09</small></div>
+                                                                     <div class="body">
+                                                                        <p>遠傳網路門市「牛轉好運方案」新春賀歲諸事大吉</p>
+                                                                        <i class="icon-chevron-right"></i>
+                                                                     </div>
+                                                                  </a>
+                                                               </li>
+                                                               <li>
+                                                                  <a rel="noopener" href="javascript:void(0)">
+                                                                     <div class="top"><small>公司</small><small>2021/02/05</small></div>
+                                                                     <div class="body">
+                                                                        <p>金牛年一路發 遠傳易付卡年節優惠</p>
+                                                                        <i class="icon-chevron-right"></i>
+                                                                     </div>
+                                                                  </a>
+                                                               </li>
+                                                               <li>
+                                                                  <a rel="noopener" href="javascript:void(0)">
+                                                                     <div class="top"><small>公司</small><small>2021/02/04</small></div>
+                                                                     <div class="body">
+                                                                        <p>Speedtest台灣5G報告首度出爐！再獲國際權威認證 遠傳5G網速全台第一</p>
+                                                                        <i class="icon-chevron-right"></i>
+                                                                     </div>
+                                                                  </a>
+                                                               </li>
+                                                               <li>
+                                                                  <a rel="noopener" href="javascript:void(0)">
+                                                                     <div class="top"><small>業務</small><small>2021/02/04</small></div>
+                                                                     <div class="body">
+                                                                        <p>一站式生活圈發燒 「遠傳心生活」推用戶獨享優惠</p>
+                                                                        <i class="icon-chevron-right"></i>
+                                                                     </div>
+                                                                  </a>
+                                                               </li>
+                                                               <li>
+                                                                  <a rel="noopener" href="javascript:void(0)">
+                                                                     <div class="top"><small>公司</small><small>2021/02/03</small></div>
+                                                                     <div class="body">
+                                                                        <p>遠傳電信與聯發科技策略合作　打造5G毫米波垂直場域</p>
+                                                                        <i class="icon-chevron-right"></i>
+                                                                     </div>
+                                                                  </a>
+                                                               </li>
+                                                               <li>
+                                                                  <a rel="noopener" href="javascript:void(0)">
+                                                                     <div class="top"><small>公司</small><small>2021/02/03</small></div>
+                                                                     <div class="body">
+                                                                        <p>Opensignal全球5G用戶體驗報告出爐！</p>
+                                                                        <i class="icon-chevron-right"></i>
+                                                                     </div>
+                                                                  </a>
+                                                               </li>
+                                                            </ul>
+                                                         </div>
+                                                         <div></div>
+                                                      </div>
+                                                   </div>
+                                                   
+                                                   
+                                                
+                                                   
+                                                   
+                                                    <!-- ALEX ADD -->
+												  	</div>
+                                                   
+                                                   <div></div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          
+                                          
+                                          
+                                          
+                                          aaa
+                                          
+                                       </div>
+                                       
+                                       
+                                          <!-- 第二段 -->
+                                                   <div class="aem-container aem-Grid aem-Grid--12 aem-Grid--default--12">
+                                                      <div class=" aem-GridColumn aem-GridColumn--default--12">
+                                                         <div class="selected-article">
+                                                            <div class="head">
+                                                               <h6>訊息內容</h6>
+                                                            </div>
+                                                            <ul>
+                                                            
+                                                            
+                                                            <li>
+                                                                  <a rel="noopener" href="javascript:void(0)">
+                                                                     <div class="top"><small>撈取資料</small><small>2021/02/09</small></div>
+                                                                     <div class="body">
+                                                                        <p>請變更內容</p>
+                                                                        <img src="./images/alex.jpg" title="alex">
+                                                                     </div>
+                                                                  </a>
+                                                               </li>
+                                                            
+                                                            
+                                                               <li>
+                                                                  <a rel="noopener" href="javascript:void(0)">
+                                                                     <div class="top"><small>撈取資料</small><small>2021/02/09</small></div>
+                                                                     <div class="body">
+                                                                        <p>請變更內容</p>
+                                                                        <img src="./images/crystal.jpg" title="crystal">
+                                                                     </div>
+                                                                  </a>
+                                                               </li>
+                                                               <li>
+                                                                  <a rel="noopener" href="javascript:void(0)">
+                                                                     <div class="top"><small>撈取資料</small><small>2021/02/05</small></div>
+                                                                     <div class="body">
+                                                                        <p>請變更內容</p>
+                                                                        <img src="./images/morris.jpg" title="morris">
+                                                                     </div>
+                                                                  </a>
+                                                               </li>
+                                                               <li>
+                                                                  <a rel="noopener" href="javascript:void(0)">
+                                                                     <div class="top"><small>撈取資料</small><small>2021/02/04</small></div>
+                                                                     <div class="body">
+                                                                       <p>請變更內容</p>
+                                                                        <img src="./images/gina.jpg" title="gina">
+                                                                     </div>
+                                                                  </a>
+                                                               </li>
+                                                               <li>
+                                                                  <a rel="noopener" href="javascript:void(0)">
+                                                                     <div class="top"><small>撈取資料</small><small>2021/02/04</small></div>
+                                                                     <div class="body">
+                                                                        <p>請變更內容</p>
+                                                                        <img src="./images/tim.jpg" title="tim">
+                                                                     </div>
+                                                                  </a>
+                                                               </li>
+                                                               <li>
+                                                                  <a rel="noopener" href="javascript:void(0)">
+                                                                     <div class="top"><small>撈取資料</small><small>2021/02/03</small></div>
+                                                                     <div class="body">
+                                                                       <p>請變更內容</p>
+                                                                        <img src="./images/yo.jpg" title="yo">
+                                                                     </div>
+                                                                  </a>
+                                                               </li>
+                                                               <li>
+                                                                  <a rel="noopener" href="javascript:void(0)">
+                                                                     <div class="top"><small>撈取資料</small><small>2021/02/03</small></div>
+                                                                     <div class="body">
+                                                                       <p>請變更內容</p>
+                                                                        <img src="./images/roy.jpg" title="roy">
+                                                                     </div>
+                                                                  </a>
+                                                               </li>
+                                                               
+                                                               <li>
+                                                                  <a rel="noopener" href="javascript:void(0)">
+                                                                     <div class="top"><small>撈取資料</small><small>2021/02/03</small></div>
+                                                                     <div class="body">
+                                                                       <p>請變更內容</p>
+                                                                        <img src="./images/aiko.jpg" title="aiko">
+                                                                     </div>
+                                                                  </a>
+                                                               </li>
+                                                               
+                                                            </ul>
+                                                         </div>
+                                                         <div></div>
+                                                      </div>
+                                                   </div>
+                                                   </div>
+                                       
+                                       
+                                       
+                                       
+                                       
+                                       
+                                    </div>
+                                    <div></div>
+                                 </div>
+                              </main>
+                              <div></div>
+                           </div>
+                           <div class=" aem-GridColumn aem-GridColumn--default--12">
+                              <footer class="fui-footer">
+                                 <div class="fui-container">
+                                    <div class="MuiGrid-root MuiGrid-container" space="2">
+                                       <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-12 MuiGrid-grid-lg-4">
+                                          <div>
+                                             <p class="text-sm phone-promo mb-0">遠傳手機直撥 <i>888</i> 或 123&nbsp;<br></p>
+                                             <p class="text-sm">MVPN 用戶撥 99888 或 123 (免費)<br>
+                                                市話撥 449-5888 或 449-5123 (市內計費)
+                                             </p>
+                                          </div>
+                                          <a href="https://www.fetnet.net/content/cbu/tw/help-center/contact-us.html" rel="noopener" to="https://www.fetnet.net/content/cbu/tw/help-center/contact-us.html"><span class="text">更多聯絡方式</span><i class="icon-chevron-right"></i></a>
+                                          <div class="social-links"><a href="https://www.facebook.com/fareastone/" rel="noopener" to="https://www.facebook.com/fareastone/" role="button" target="_blank" class="socail-item"><i class="icon-facebook" aria-label="facebook-icon"></i></a><a href="https://www.youtube.com/user/FETvideos" rel="noopener" to="https://www.youtube.com/user/FETvideos" role="button" target="_blank" class="socail-item"><i class="icon-youtube" aria-label="youtube-icon"></i></a></div>
+                                       </div>
+                                       <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-12 MuiGrid-grid-lg-8">
+                                          <div class="MuiGrid-root MuiGrid-container" space="1">
+                                             <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-12 MuiGrid-grid-md-3">
+                                                <div class="fui-collapse response-collapse ">
+                                                   <h6 role="button" data-aa-tracking-id="Tab_展開" class="collapse-header mobile-collapse-header pointer-none">關於我們</h6>
+                                                   <div role="menu" tabindex="-1" class="
+                                                      fui-menu 
+                                                      mobile-collapse 
+                                                      "><a href="https://www.fetnet.net/corporate/" rel="noopener" role="button" to="https://www.fetnet.net/corporate/" target="_self" title=" 關於遠傳" class="fui-item "><span class="content"> 關於遠傳</span></a><a href="https://www.fetnet.net/corporate/SocietyManage.html" rel="noopener" role="button" to="https://www.fetnet.net/corporate/SocietyManage.html" target="_self" title="企業社會責任" class="fui-item "><span class="content">企業社會責任</span></a><a href="https://www.fetnet.net/corporate/hr/index.html" rel="noopener" role="button" to="https://www.fetnet.net/corporate/hr/index.html" target="_self" title="菁英招募" class="fui-item "><span class="content">菁英招募</span></a></div>
+                                                </div>
+                                             </div>
+                                             <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-12 MuiGrid-grid-md-3">
+                                                <div class="fui-collapse response-collapse ">
+                                                   <h6 role="button" data-aa-tracking-id="Tab_展開" class="collapse-header mobile-collapse-header pointer-none">合作</h6>
+                                                   <div role="menu" tabindex="-1" class="
+                                                      fui-menu 
+                                                      mobile-collapse 
+                                                      "><a href="https://www.fetnet.net/online_proposal/home.jsp" rel="noopener" role="button" to="https://www.fetnet.net/online_proposal/home.jsp" target="_self" title="合作提案" class="fui-item "><span class="content">合作提案</span></a><a href="https://www.fetnet.net/mediad/" rel="noopener" role="button" to="https://www.fetnet.net/mediad/" target="_self" title="媒體行銷服務" class="fui-item "><span class="content">媒體行銷服務</span></a></div>
+                                                </div>
+                                             </div>
+                                             <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-12 MuiGrid-grid-md-3">
+                                                <div class="fui-collapse response-collapse ">
+                                                   <h6 role="button" data-aa-tracking-id="Tab_展開" class="collapse-header mobile-collapse-header pointer-none">條款相關</h6>
+                                                   <div role="menu" tabindex="-1" class="
+                                                      fui-menu 
+                                                      mobile-collapse 
+                                                      "><a href="https://www.fetnet.net/corporate/FETnetRule.html" rel="noopener" role="button" to="https://www.fetnet.net/corporate/FETnetRule.html" target="_self" title="營業規章" class="fui-item "><span class="content">營業規章</span></a><a href="https://cpc.ey.gov.tw/" rel="noopener" role="button" to="https://cpc.ey.gov.tw/" target="_blank" title="行政院消保會" class="fui-item "><span class="content">行政院消保會</span></a><a rel="noopener" role="button" target="_self" title=" 隱私權條款" class="fui-item " href="https://corporate.fetnet.net/content/cbu/tw/information/privacy.html"><span class="content"> 隱私權條款</span></a><a rel="noopener" role="button" target="_self" title="著作權政策" class="fui-item " href="https://corporate.fetnet.net/content/cbu/tw/information/copyright.html"><span class="content">著作權政策</span></a></div>
+                                                </div>
+                                             </div>
+                                             <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-12 MuiGrid-grid-md-3">
+                                                <div class="fui-collapse response-collapse ">
+                                                   <h6 role="button" data-aa-tracking-id="Tab_展開" class="collapse-header mobile-collapse-header pointer-none">相關網站</h6>
+                                                   <div role="menu" tabindex="-1" class="
+                                                      fui-menu 
+                                                      mobile-collapse 
+                                                      "><a href="http://www.arcoa.com.tw/arcoa/" rel="noopener" role="button" to="http://www.arcoa.com.tw/arcoa/" target="_blank" title="全虹購物城" class="fui-item "><span class="content">全虹購物城</span></a><a href="http://www.conexusmobile.com/" rel="noopener" role="button" to="http://www.conexusmobile.com/" target="_blank" title="CONEXUS" class="fui-item "><span class="content">CONEXUS</span></a><a href="https://www.osc.com.tw/" rel="noopener" role="button" to="https://www.osc.com.tw/" target="_blank" title="亞東證券理財網" class="fui-item "><span class="content">亞東證券理財網</span></a><a href="http://www.fenc.com/magazine/index.aspx" rel="noopener" role="button" to="http://www.fenc.com/magazine/index.aspx" target="_blank" title="遠東人網站" class="fui-item "><span class="content">遠東人網站</span></a></div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                    <div class="MuiGrid-root copyright MuiGrid-container" space="1">
+                                       <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-12 MuiGrid-grid-md-8">
+                                          <a rel="noopener" href="https://corporate.fetnet.net/content/cbu/tw/index.html"><img data-src="/content/dam/fetnet/user_resource/cbu/images/footer/fetnet-footer-logo.png" alt="FetnetLogo" class=" lazyloaded" height="30" src="./demo/fetnet-footer-logo.png"></a>
+                                          <span class="text-sm is-text-gray100">
+                                             <p class="d-inline">遠傳電信版權所有 © Far EasTone<span class="d-none d-md-inline"> Telecommunications Co., Ltd</span>.</p>
+                                          </span>
+                                       </div>
+                                       <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-12 MuiGrid-grid-md-4" align="right">
+                                          <div class="
+                                             fui-dropdown 
+                                             with-arrow 
+                                             is-right is-bottom is-reverse
+                                             ">
+                                             <button aria-haspopup="true" aria-expanded="false" aria-label="繁體中文" data-aa-tracking-id="Tab_展開" class="fui-dropdown-item"><span>繁體中文</span><i class="icon-chevron-down"></i></button>
+                                             <div role="menu" tabindex="-1" class="
+                                                fui-menu 
+                                                ">
+                                                <div class="menu-wrapper">
+                                                   <div role="button" class="fui-item active  "><span class="content">繁體中文</span></div>
+                                                   <div role="button" class="fui-item   "><span class="content">English</span></div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </footer>
+                              <div></div>
+                           </div>
+                        </div>
+                        <div></div>
+                     </div>
+                  </div>
+                  <div></div>
+               </div>
+            </div>
+            <div></div>
+         </div>
+         <div class="fui-go-top" data-aa-tracking-id="往上"></div>
+         <section class="loading">
+            <div>
+               <div title="" role="button" aria-label="animation" tabindex="0" style="width: 90px; height: 90px; overflow: hidden; margin: 0px auto; outline: none;">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 90" width="90" height="90" preserveAspectRatio="xMidYMid slice" style="width: 100%; height: 100%; transform: translate3d(0px, 0px, 0px);">
+                     <defs>
+                        <clippath id="__lottie_element_2">
+                           <rect width="90" height="90" x="0" y="0"></rect>
+                        </clippath>
+                        <clippath id="__lottie_element_4">
+                           <path d="M0,0 L500,0 L500,500 L0,500z"></path>
+                        </clippath>
+                     </defs>
+                     <g clip-path="url(#__lottie_element_2)">
+                        <g clip-path="url(#__lottie_element_4)" transform="matrix(0.3540000021457672,0,0,0.3540000021457672,-43.5,-43.5)" opacity="1" style="display: block;">
+                           <g transform="matrix(1,0,0,1,287,250)" opacity="0.8" style="display: block;">
+                              <g opacity="1" transform="matrix(1,0,0,1,0,0)">
+                                 <path stroke-linecap="round" stroke-linejoin="miter" fill-opacity="0" stroke-miterlimit="4" stroke="rgb(242,46,46)" stroke-opacity="1" stroke-width="16" d=" M-141,1.25 C-141,1.25 -141,8 -141,8"></path>
+                              </g>
+                           </g>
+                           <g transform="matrix(1,0,0,1,339.5,250)" opacity="0.9" style="display: block;">
+                              <g opacity="1" transform="matrix(1,0,0,1,0,0)">
+                                 <path stroke-linecap="round" stroke-linejoin="miter" fill-opacity="0" stroke-miterlimit="4" stroke="rgb(242,46,46)" stroke-opacity="1" stroke-width="16" d=" M-141,-8.52295207977295 C-141,-8.52295207977295 -141,17.344058990478516 -141,17.344058990478516"></path>
+                              </g>
+                           </g>
+                           <g transform="matrix(1,0,0,1,392,250)" opacity="1" style="display: block;">
+                              <g opacity="1" transform="matrix(1,0,0,1,0,0)">
+                                 <path stroke-linecap="round" stroke-linejoin="miter" fill-opacity="0" stroke-miterlimit="4" stroke="rgb(242,46,46)" stroke-opacity="1" stroke-width="16" d=" M-141,-25.49242401123047 C-141,-25.49242401123047 -141,34.31352996826172 -141,34.31352996826172"></path>
+                              </g>
+                           </g>
+                           <g transform="matrix(1,0,0,1,444.5,250)" opacity="0.9" style="display: block;">
+                              <g opacity="1" transform="matrix(1,0,0,1,0,0)">
+                                 <path stroke-linecap="round" stroke-linejoin="miter" fill-opacity="0" stroke-miterlimit="4" stroke="rgb(242,46,46)" stroke-opacity="1" stroke-width="16" d=" M-141,-21.89836311340332 C-141,-21.89836311340332 -141,30.120086669921875 -141,30.120086669921875"></path>
+                              </g>
+                           </g>
+                           <g transform="matrix(1,0,0,1,497,250)" opacity="0.8" style="display: block;">
+                              <g opacity="1" transform="matrix(1,0,0,1,0,0)">
+                                 <path stroke-linecap="round" stroke-linejoin="miter" fill-opacity="0" stroke-miterlimit="4" stroke="rgb(242,46,46)" stroke-opacity="1" stroke-width="16" d=" M-141,-5.812705993652344 C-141,-5.812705993652344 -141,13.537091255187988 -141,13.537091255187988"></path>
+                              </g>
+                           </g>
+                        </g>
+                     </g>
+                  </svg>
+               </div>
+            </div>
+         </section>
+      </div>
+      <!-- Google Tag Manager (noscript) -->
+      <noscript>
+         <iframe title="Google Tag Manager" src="https://www.googletagmanager.com/ns.html?id=GTM-ND28QLF" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+      </noscript>
+      <!-- End Google Tag Manager (noscript) -->
+      <script type="text/javascript" src="./demo/fetnet-corp-react.min.js.下載"></script>
+      <script type="text/javascript" src="./demo/corp-react.min.js.下載"></script><iframe height="0" width="0" style="display: none; visibility: hidden;" src="./demo/activityi.html"></iframe><iframe height="0" width="0" style="display: none; visibility: hidden;" src="./demo/activityi(1).html"></iframe>
+      <script type="text/javascript" id="">(window._bwtm=window._bwtm||[]).push({mid:407,pid:"action"});(window._bwtm=window._bwtm||[]).push({mid:621,pid:"action"});</script>
+      <script type="text/javascript" id="" src="./demo/rec.js.下載"></script><script type="text/javascript" id="">(function(b,c,e,f,d){b[d]=b[d]||[];var g=function(){var a={ti:"23000335"};a.q=b[d];b[d]=new UET(a);b[d].push("pageLoad")};var a=c.createElement(e);a.src=f;a.async=1;a.onload=a.onreadystatechange=function(){var b=this.readyState;b&&"loaded"!==b&&"complete"!==b||(g(),a.onload=a.onreadystatechange=null)};c=c.getElementsByTagName(e)[0];c.parentNode.insertBefore(a,c)})(window,document,"script","//bat.bing.com/bat.js","uetq");</script>
+      <script type="text/javascript" id="">(function(b,c,e,f,d){b[d]=b[d]||[];var g=function(){var a={ti:"5976185"};a.q=b[d];b[d]=new UET(a);b[d].push("pageLoad")};var a=c.createElement(e);a.src=f;a.async=1;a.onload=a.onreadystatechange=function(){var b=this.readyState;b&&"loaded"!==b&&"complete"!==b||(g(),a.onload=a.onreadystatechange=null)};c=c.getElementsByTagName(e)[0];c.parentNode.insertBefore(a,c)})(window,document,"script","//bat.bing.com/bat.js","uetq");</script>
+      <script type="text/javascript" id="">!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","398807624221208");fbq("track","PageView");</script>
+      <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=398807624221208&amp;ev=PageView&amp;noscript=1"></noscript>
+      <script type="text/javascript" id="">(function(b,c,e,f,d){b[d]=b[d]||[];var g=function(){var a={ti:"5976185"};a.q=b[d];b[d]=new UET(a);b[d].push("pageLoad")};var a=c.createElement(e);a.src=f;a.async=1;a.onload=a.onreadystatechange=function(){var b=this.readyState;b&&"loaded"!==b&&"complete"!==b||(g(),a.onload=a.onreadystatechange=null)};c=c.getElementsByTagName(e)[0];c.parentNode.insertBefore(a,c)})(window,document,"script","//bat.bing.com/bat.js","uetq");</script>
+      <script type="text/javascript" id="">(function(a,c,e,k,b){a[b]=a[b]||[];a[b].push({projectId:"10000",properties:{pixelId:"10064138"}});var d=c.createElement(e);d.src=k;d.async=!0;d.onload=d.onreadystatechange=function(){var f=this.readyState,l=a[b];if(!f||"complete"==f||"loaded"==f)try{var g=YAHOO.ywa.I13N.fireBeacon;a[b]=[];a[b].push=function(h){g([h])};g(l)}catch(h){}};c=c.getElementsByTagName(e)[0];e=c.parentNode;e.insertBefore(d,c)})(window,document,"script","https://s.yimg.com/wi/ytc.js","dotq");</script>
+      <script type="text/javascript" id="" src="./demo/trackeventv3.js.下載"></script>
+      <script type="text/javascript" id="" src="./demo/launch-142d7e74d75a.min.js.下載"></script><script type="text/javascript" id="">(function(b,c,e,f,d){b[d]=b[d]||[];var g=function(){var a={ti:"5976185"};a.q=b[d];b[d]=new UET(a);b[d].push("pageLoad")};var a=c.createElement(e);a.src=f;a.async=1;a.onload=a.onreadystatechange=function(){var b=this.readyState;b&&"loaded"!==b&&"complete"!==b||(g(),a.onload=a.onreadystatechange=null)};c=c.getElementsByTagName(e)[0];c.parentNode.insertBefore(a,c)})(window,document,"script","//bat.bing.com/bat.js","uetq");</script>
+      <script type="text/javascript" id="">!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","398807624221208");fbq("track","PageView");</script>
+      <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=398807624221208&amp;ev=PageView&amp;noscript=1"></noscript>
+      <script type="text/javascript" id="">(function(a,b,d){a._ltq=a._ltq||[];a._lt=a._lt||function(){a._ltq.push(arguments)};var e="https:"===location.protocol?"https://d.line-scdn.net":"http://d.line-cdn.net",c=b.createElement("script");c.async=1;c.src=d||e+"/n/line_tag/public/release/v1/lt.js";b=b.getElementsByTagName("script")[0];b.parentNode.insertBefore(c,b)})(window,document);_lt("init",{customerType:"lap",tagId:"b36b6311-c228-4a77-9789-1d07c19c82c8"});_lt("send","pv",["b36b6311-c228-4a77-9789-1d07c19c82c8"]);</script>
+      <noscript>
+         <img height="1" width="1" style="display:none" src="https://tr.line.me/tag.gif?c_t=lap&amp;t_id=b36b6311-c228-4a77-9789-1d07c19c82c8&amp;e=pv&amp;noscript=1">
+      </noscript>
+      <div style="display: none; visibility: hidden;">
+         <script>(function(a,b,d){a._ltq=a._ltq||[];a._lt=a._lt||function(){a._ltq.push(arguments)};var e="https:"===location.protocol?"https://d.line-scdn.net":"http://d.line-cdn.net",c=b.createElement("script");c.async=1;c.src=d||e+"/n/line_tag/public/release/v1/lt.js";b=b.getElementsByTagName("script")[0];b.parentNode.insertBefore(c,b)})(window,document);_lt("init",{customerType:"lap",tagId:"b36b6311-c228-4a77-9789-1d07c19c82c8"});_lt("send","pv",["b36b6311-c228-4a77-9789-1d07c19c82c8"]);</script>
+         <noscript></noscript>
+      </div>
+      <script type="text/javascript" id="" src="./demo/trackeventv3.js.下載"></script>
+      <div style="width:0px; height:0px; display:none; visibility:hidden;" id="batBeacon287441124309"><img style="width:0px; height:0px; display:none; visibility:hidden;" id="batBeacon400581775446" width="0" height="0" alt="" src="./demo/0"></div>
+      <div style="width:0px; height:0px; display:none; visibility:hidden;" id="batBeacon159400031373"><img style="width:0px; height:0px; display:none; visibility:hidden;" id="batBeacon706756555817" width="0" height="0" alt="" src="./demo/0(1)"></div>
+      <div style="width:0px; height:0px; display:none; visibility:hidden;" id="batBeacon494656824335"><img style="width:0px; height:0px; display:none; visibility:hidden;" id="batBeacon805669938708" width="0" height="0" alt="" src="./demo/0(2)"></div>
+      <div style="width:0px; height:0px; display:none; visibility:hidden;" id="batBeacon114311059942"><img style="width:0px; height:0px; display:none; visibility:hidden;" id="batBeacon600235341080" width="0" height="0" alt="" src="./demo/0(3)"></div>
+      <script type="text/javascript" id="">trackAdEvent("fetnetspeaker202012landing","fetnetspeaker202012","fetnetspeaker202012landing");</script><script>
+         var _adobe_get_AIC = "";
+         var _adobe_get_fetuid = "";  
+         var _adobe_isStatus = sessionStorage.getItem('AA_fetuid_status');   
+         var _adobe_lastCookie = sessionStorage.getItem('AA_fetuid_cookie'); 
+         var _adobe_aicStatus = sessionStorage.getItem('AA_fetuid_status_aic');  
+         var _adobe_sAIC = sessionStorage.getItem('fetnet_aa_aic');
+         
+         
+         if (_adobe_get_fetuid !== _adobe_lastCookie) {
+             sessionStorage.removeItem('AA_fetuid_status');
+         }
+         
+         _adobe_isStatus = sessionStorage.getItem('AA_fetuid_status');
+         
+         
+         if (_adobe_get_fetuid !== "" && _adobe_get_fetuid !== _adobe_lastCookie && _adobe_isStatus === null) {
+             sessionStorage.setItem('AA_fetuid_cookie', _adobe_get_fetuid);
+             _satellite.track('AA_fetuid_direct_call');
+             sessionStorage.setItem('AA_fetuid_status', '1');
+             sessionStorage.removeItem('AA_fetuid_status_aic');
+         }else if (_adobe_aicStatus === null && (_adobe_get_fetuid === "" ||  _adobe_get_fetuid === undefined || _adobe_lastCookie === null)) {
+             starAIC();
+             sessionStorage.setItem('AA_fetuid_status_aic', '1');
+         }
+           
+         
+         var xmlhttp;
+         var _adobe_response;
+         function loadXMLDoc(url, cfunc) {
+             console.log("-------------------hi here is loadXMLDoc------------------------------------");
+             if (window.XMLHttpRequest) { // code for IE7+, Firefox, Chrome, Opera, Safari
+                 xmlhttp = new XMLHttpRequest();
+             } else { // code for IE6, IE5
+                 xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+             }
+             xmlhttp.onreadystatechange = cfunc;
+             xmlhttp.open("GET", url, true);
+             xmlhttp.send();
+         }
+         
+         function starAIC() {
+             console.log("-------------------hi here is starAIC------------------------------------");
+             loadXMLDoc("https://apis.fetnet.net/aic/api/v1/getAicCookie", function() {
+                 if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                           _adobe_response = JSON.parse(this.responseText);
+                           if(_adobe_response !==  _adobe_get_AIC || _adobe_get_AIC !== _adobe_sAIC ){
+                             
+                             console.log("---------_adobe_response.fetuid---------" + _adobe_response.fetuid);
+                             console.log("---------_adobe_get_AIC---------" + _adobe_get_AIC);
+                             
+                             localStorage.setItem('fetnet_aa_aic',_adobe_response.fetuid);
+                             sessionStorage.setItem('fetnet_aa_aic',_adobe_response.fetuid);
+                             _adobe_get_AIC = localStorage.getItem('fetnet_aa_aic');
+                             
+                             if(_adobe_response.fetuid !=='N'){                           
+                                 _satellite.track('AA_AIC_direct_call');                        
+                             }           
+                           }
+                           console.log("-- after direct call , status:200 ----get_AIC : " + _adobe_get_AIC);
+                 }else if (xmlhttp.status >= 400 && xmlhttp.status < 500) {
+                     console.log(xmlhttp.statu + "----- error code: 400--------")
+                 }else if (xmlhttp.status >= 500) {
+                     console.log(xmlhttp.statu + "------error code: 500--------")
+                 }
+             });
+         }
+      </script><script>
+         function ctrf(e,a){s.tl(e.srcElement,"o",a)}function _alTrackImpressions(e,a,t,o,s){var i={adType:e,positionID:a,campaignName:t,materialName:o,uAgentS:s};"topad"==e.toLowerCase()?_satellite.track("fire TopAD Impressions",i):"splashad"==e.toLowerCase()?_satellite.track("fire SplashAD Impressions",i):"contentad"==e.toLowerCase()?_satellite.track("fire contentAD Impressions",i):console.log("_alTrackImpressions \u63d0\u793a\uff1a\u7b2c\u4e00\u7684\u53c3\u6578\u5fc5\u586b\u4e14\u6709\u56fa\u5b9a\u5b57\u4e32")}function _alTrackClick(e,a,t,o,s){var i={adType:e,positionID:a,campaignName:t,materialName:o,uAgentS:s};"topad"==e.toLowerCase()?_satellite.track("fire TopAD Click",i):"splashad"==e.toLowerCase()?_satellite.track("fire SplashAD Click",i):"contentad"==e.toLowerCase()?_satellite.track("fire contentAD Click",i):console.log("_alTrackClick \u63d0\u793a\uff1a\u7b2c\u4e00\u7684\u53c3\u6578\u5fc5\u586b\u4e14\u6709\u56fa\u5b9a\u5b57\u4e32")}
+      </script><script>
+         var _performanTime=function(){if("undefined"!=typeof performance&&"object"==typeof performance.timing){performance.timing;var e=performance.timing.redirectStart||performance.timing.fetchStart||performance.timing.requestStart,n=performance.timing.domContentLoadedEventEnd||performance.timing.domInteractive||performance.timing.domComplete||performance.timing.loadEventEnd;if(e&&n&&e<n)return sessionStorage.setItem("_performanTime",n-e),sessionStorage.setItem("_performanPage",window.location.host+window.location.pathname),console.log("---------\u9801\u9762\u8f09\u5165\u6642\u9593(endTime - startTime(\u6beb\u79d2)----------"+n+" - "+e+" = "+(n-e)),n-e}return 0}();
+      </script><script>
+         window&&window.s&&"object"==typeof window.s.ActivityMap&&(console.log("ActivityMap:Loaded!"),window.s.ActivityMap.link=function(t,e){if(console.log("ActivityMap: ",t,e),!e&&t){if(t.getAttribute("data-aa-tracking-id"))return t.getAttribute("data-aa-tracking-id");if(t.innerText||t.textContent)return t.innerText||t.textContent;if(t.getAttribute("title"))return t.getAttribute("title");if(t.getAttribute("alt"))return t.getAttribute("alt");if("A"===t.tagName.toUpperCase()&&t.href)return t.href}});
+      </script><script type="application/javascript" id="ywa-1613625657447-216230" class="ywa-10000" defer="" src="./demo/sp.pl.下載"></script>
+   </body>
+</html>

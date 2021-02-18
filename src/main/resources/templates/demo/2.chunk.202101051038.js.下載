@@ -1,0 +1,16 @@
+/*
+ ________  ________  ________  __    __  ________  ________        ______    ______   _______   _______            ______   ________  __       __ 
+|        \|        \|        \|  \  |  \|        \|        \      /      \  /      \ |       \ |       \          /      \ |        \|  \     /  \
+| $$$$$$$$| $$$$$$$$ \$$$$$$$$| $$\ | $$| $$$$$$$$ \$$$$$$$$     |  $$$$$$\|  $$$$$$\| $$$$$$$\| $$$$$$$\        |  $$$$$$\| $$$$$$$$| $$\   /  $$
+| $$__    | $$__       | $$   | $$$\| $$| $$__       | $$ ______ | $$   \$$| $$  | $$| $$__| $$| $$__/ $$ ______ | $$__| $$| $$__    | $$$\ /  $$$
+| $$  \   | $$  \      | $$   | $$$$\ $$| $$  \      | $$|      \| $$      | $$  | $$| $$    $$| $$    $$|      \| $$    $$| $$  \   | $$$$\  $$$$
+| $$$$$   | $$$$$      | $$   | $$\$$ $$| $$$$$      | $$ \$$$$$$| $$   __ | $$  | $$| $$$$$$$\| $$$$$$$  \$$$$$$| $$$$$$$$| $$$$$   | $$\$$ $$ $$
+| $$      | $$_____    | $$   | $$ \$$$$| $$_____    | $$        | $$__/  \| $$__/ $$| $$  | $$| $$              | $$  | $$| $$_____ | $$ \$$$| $$
+| $$      | $$     \   | $$   | $$  \$$$| $$     \   | $$         \$$    $$ \$$    $$| $$  | $$| $$              | $$  | $$| $$     \| $$  \$ | $$
+ \$$       \$$$$$$$$    \$$    \$$   \$$ \$$$$$$$$    \$$          \$$$$$$   \$$$$$$  \$$   \$$ \$$               \$$   \$$ \$$$$$$$$ \$$      \$$
+                                                                                                                                                  
+                                                                                                                                                  
+                                                                                                                                                  
+*/
+(this["webpackJsonpreact-app"]=this["webpackJsonpreact-app"]||[]).push([[2],{701:function(e,t,a){"use strict";a.r(t);var r=a(2),n=a(1),c=a(4),o=a(3),i=a(0),s=a.n(i),l=a(11),u=function(e){Object(c.a)(a,e);var t=Object(o.a)(a);function a(){var e;Object(r.a)(this,a);for(var n=arguments.length,c=new Array(n),o=0;o<n;o++)c[o]=arguments[o];return(e=t.call.apply(t,[this].concat(c))).overflow=function(e){return e.length>20?e.slice(0,20)+"...":e},e}return Object(n.a)(a,[{key:"render",value:function(){var e=this;return s.a.createElement("section",{className:"fui-breadcrumb-container",style:{top:this.props.top}},s.a.createElement("div",{className:"fui-container"},s.a.createElement("ul",{className:"fui-breadcrumb is-".concat(this.props.color)},this.props.breadcrumb.map((function(t,a){return s.a.createElement("li",{key:"breadcrumb-item-".concat(a)},s.a.createElement(l.default,{to:t.link},e.overflow(t.text)))})))))}}]),a}(s.a.Component);t.default=u}}]);
+//# sourceMappingURL=2.chunk.202101051038.js.map
