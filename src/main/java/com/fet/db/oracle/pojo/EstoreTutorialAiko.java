@@ -1,5 +1,5 @@
 package com.fet.db.oracle.pojo;
-// Generated 2021/2/18 �U�� 05:57:31 by Hibernate Tools 4.3.5.Final
+// Generated 2021/2/18 �U�� 06:22:30 by Hibernate Tools 4.3.5.Final
 
 import java.util.Date;
 import javax.persistence.Column;

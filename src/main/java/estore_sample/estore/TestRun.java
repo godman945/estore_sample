@@ -12,19 +12,23 @@ import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 import org.hibernate.query.Query;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.WebApplicationType;
+import org.springframework.boot.builder.SpringApplicationBuilder;
+import org.springframework.context.ApplicationContext;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.fet.db.oracle.pojo.EstoreTutorialAiko;
 import com.fet.db.oracle.pojo.EstoreTutorialAlex;
 //import com.fet.estore.core.model.SmsMessage;
-import com.fet.db.oracle.service.estoreTutorialAiko.IEstoreTutorialAikoService;
+import com.fet.db.oracle.service.estoreTutorialAiko.IEstoreTutorialAlexService;
+import com.fet.spring.init.SpringbootWebApplication;
 
 @Component
 public class TestRun {
 
 	@Autowired
-	private IEstoreTutorialAikoService estoreTutorialAikoService;
+	private IEstoreTutorialAlexService estoreTutorialAlexService;
 	
 	/**
 	 * 測試連線用
@@ -64,7 +68,7 @@ public class TestRun {
 			
 			 Configuration config = new Configuration();
 			 config.setProperties(settings);
-			 config.addAnnotatedClass(EstoreTutorialAiko.class);
+			 config.addAnnotatedClass(EstoreTutorialAlex.class);
 			 
 			 
 			 sessionFactory = config.buildSessionFactory();  
@@ -136,14 +140,17 @@ public class TestRun {
 	}
 	
 	@Transactional
-	public void springHibernate(IEstoreTutorialAikoService estoreTutorialAikoService2){
+	public void springHibernate(){
 		
-		EstoreTutorialAiko estoreTutorialAiko = estoreTutorialAikoService.get("66bdcb69-d1d0-4793-abe0-ce9b3da0702a");
-		estoreTutorialAiko.setUserName("ALEX3");
-		estoreTutorialAikoService.saveOrUpdate(estoreTutorialAiko);
+		EstoreTutorialAlex estoreTutorialAlex = estoreTutorialAlexService.get("66bdcb69-d1d0-4793-abe0-ce9b3da0702a");
+		System.out.println(estoreTutorialAlex.getUserAddr());
 		
-		List a = new ArrayList();
-		System.out.println(a.get(1));
+		
+		//		estoreTutorialAiko.setUserName("ALEX3");
+//		estoreTutorialAikoService.saveOrUpdate(estoreTutorialAiko);
+//		
+//		List a = new ArrayList();
+//		System.out.println(a.get(1));
 		
 //		System.out.println(estoreTutorialAiko == null);
 //		System.out.println(estoreTutorialAiko.getUserAddr());
@@ -165,17 +172,17 @@ public class TestRun {
 //	}
 	
 	public static void main(String[] args) {
-//		ApplicationContext ctx = new SpringApplicationBuilder(SpringbootWebApplication.class).web(WebApplicationType.NONE).run(args);
-//		TestRun testRun = ctx.getBean(TestRun.class);
-//		
-//		
+		ApplicationContext ctx = new SpringApplicationBuilder(SpringbootWebApplication.class).web(WebApplicationType.NONE).run(args);
+		TestRun testRun = ctx.getBean(TestRun.class);
+		testRun.testHibernate();
+		
 //		TestRun2 testRun2 = ctx.getBean(TestRun2.class);
 //		testRun.springHibernate(testRun2.getTEST());
 		
 		
-		TestRun testRun = new TestRun();
-//		testRun.testOracleConnection();
-		testRun.testHibernate();
+//		TestRun testRun = new TestRun();
+////		testRun.testOracleConnection();
+////		testRun.testHibernate();
 //		testRun.springHibernate();
 //		testRun.senSMS();
 	}
