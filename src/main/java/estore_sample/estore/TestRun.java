@@ -172,16 +172,16 @@ public class TestRun {
 //	}
 	
 	public static void main(String[] args) {
-		ApplicationContext ctx = new SpringApplicationBuilder(SpringbootWebApplication.class).web(WebApplicationType.NONE).run(args);
-		TestRun testRun = ctx.getBean(TestRun.class);
-		testRun.testHibernate();
+//		ApplicationContext ctx = new SpringApplicationBuilder(SpringbootWebApplication.class).web(WebApplicationType.NONE).run(args);
+//		TestRun testRun = ctx.getBean(TestRun.class);
+//		testRun.testHibernate();
 		
 //		TestRun2 testRun2 = ctx.getBean(TestRun2.class);
 //		testRun.springHibernate(testRun2.getTEST());
 		
 		
-//		TestRun testRun = new TestRun();
-////		testRun.testOracleConnection();
+		TestRun testRun = new TestRun();
+		testRun.testOracleConnection();
 ////		testRun.testHibernate();
 //		testRun.springHibernate();
 //		testRun.senSMS();

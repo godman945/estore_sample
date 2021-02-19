@@ -36,7 +36,11 @@ public class IndexController  {
 	}
 	
 	
-	
+	@RequestMapping("/alex3")
+	public String testData(Model model){
+		System.out.println("AAAAAAAAAAAA");
+		return "index";
+	}
 	
 ////	@Autowired
 ////    private User user;
