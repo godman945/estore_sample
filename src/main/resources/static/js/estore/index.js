@@ -1,6 +1,10 @@
-﻿﻿$(document).ready(function(){
+﻿
+﻿$(document).ready(function(){
 	console.log(">>>>>>>>>>>>>>>>>>>>>>");
 	
+	
+	
+	alert("AAAAAAAAAAAAAAAAAAA");
 
 $.ajax({
 		url:"alex3",

@@ -3,12 +3,14 @@ package estore_sample.estore;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
-import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 import java.util.Properties;
+import java.util.UUID;
 
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
 import org.hibernate.query.Query;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,7 +20,8 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.fet.db.oracle.pojo.EstoreTutorialAiko;
+import com.fet.db.mybatis.entity.EstoreTutorialAlexEntity;
+import com.fet.db.mybatis.mapper.EstoreTutorialAlexMapper;
 import com.fet.db.oracle.pojo.EstoreTutorialAlex;
 //import com.fet.estore.core.model.SmsMessage;
 import com.fet.db.oracle.service.estoreTutorialAiko.IEstoreTutorialAlexService;
@@ -74,7 +77,7 @@ public class TestRun {
 			 sessionFactory = config.buildSessionFactory();  
 			 session = sessionFactory.openSession();
 			 
-			 //原生sql
+//			 //原生sql
 			 Query query = session.createNativeQuery("select * from ESTORE_TUTORIAL_ALEX");
 			 System.out.println(query.list().size());
 
@@ -87,10 +90,6 @@ public class TestRun {
 			 }
 			 
 			 
-			 
-			 
-			 
-			 
 //			 //HQL
 //			 query = session.createQuery(" from EstoreTutorialAiko");
 //			 List<EstoreTutorialAiko> estoreTutorialAikoList = query.list();
@@ -101,24 +100,25 @@ public class TestRun {
 			 
 			 
 			 
-//			 List a = new ArrayList();
-//			 a.get(1);
+//			
 			 
 			 
 			 
 			 
 			 //新增
-//			 Transaction transaction  = session.beginTransaction();
-//			 EstoreTutorialAiko estoreTutorialAikoAdd = new EstoreTutorialAiko();
-//			 estoreTutorialAikoAdd.setId(UUID.randomUUID().toString());
-//			 estoreTutorialAikoAdd.setUserName("TEST");
-//			 estoreTutorialAikoAdd.setUserRemain(Long.valueOf("5"));
-//			 estoreTutorialAikoAdd.setUserAddr("TTTT");
-//			 estoreTutorialAikoAdd.setCreateTime(new Date());
-//			 estoreTutorialAikoAdd.setUpdateTime(new Date());
-//			 session.save(estoreTutorialAikoAdd);
-//			 session.flush();
-//			 transaction.commit();
+			 Date date = new Date();
+			 
+			 Transaction transaction  = session.beginTransaction();
+			 EstoreTutorialAlex estoreTutorialAlexAdd = new EstoreTutorialAlex();
+			 estoreTutorialAlexAdd.setId(UUID.randomUUID().toString());
+			 estoreTutorialAlexAdd.setUserName("ALEX_T");
+			 estoreTutorialAlexAdd.setUserRemain(Long.valueOf("10"));
+			 estoreTutorialAlexAdd.setUserAddr("ZZZZ");
+			 estoreTutorialAlexAdd.setCreateTime(date);
+			 estoreTutorialAlexAdd.setUpdateTime(date);
+			 session.save(estoreTutorialAlexAdd);
+			 session.flush();
+			 transaction.commit();
 //			 
 //			 transaction  = session.beginTransaction();
 //			 query = session.createQuery(" from EstoreTutorialAiko where userName =:findName ");    
@@ -171,18 +171,55 @@ public class TestRun {
 //		nSmsMessageDAO.save(smsMessage);
 //	}
 	
+	
+	@Autowired
+	private EstoreTutorialAlexMapper estoreTutorialAlexMapper;
+	
+	
+	public void testMybatis(){
+//		List<EstoreTutorialAlexEntity> list = estoreTutorialAlexMapper.getAllEstoreTutorialAlex();
+//		for (EstoreTutorialAlexEntity estoreTutorialAlexEntity : list) {
+//			System.out.println(estoreTutorialAlexEntity.getId());
+//		}
+		
+		List<EstoreTutorialAlexEntity> list2 = estoreTutorialAlexMapper.getAllEstoreTutorialAlexByName("ALEX_T");
+		for (EstoreTutorialAlexEntity estoreTutorialAlexEntity : list2) {
+			System.out.println(estoreTutorialAlexEntity.getId());
+		}
+		
+		
+		
+	}
+	
 	public static void main(String[] args) {
-//		ApplicationContext ctx = new SpringApplicationBuilder(SpringbootWebApplication.class).web(WebApplicationType.NONE).run(args);
-//		TestRun testRun = ctx.getBean(TestRun.class);
+		
+		System.out.println(TestRun.class);
+		
+		ApplicationContext ctx = new SpringApplicationBuilder(SpringbootWebApplication.class).web(WebApplicationType.NONE).run(args);
+		TestRun testRun = ctx.getBean(TestRun.class);
+		testRun.testMybatis();
+		
+		
+		
+		
+		
+		
 //		testRun.testHibernate();
 		
 //		TestRun2 testRun2 = ctx.getBean(TestRun2.class);
 //		testRun.springHibernate(testRun2.getTEST());
 		
 		
-		TestRun testRun = new TestRun();
-		testRun.testOracleConnection();
-////		testRun.testHibernate();
+//		TestRun testRun = new TestRun();
+//		testRun.testHibernate();
+		
+		
+		
+		
+		
+		
+//		testRun.testOracleConnection();
+		
 //		testRun.springHibernate();
 //		testRun.senSMS();
 	}

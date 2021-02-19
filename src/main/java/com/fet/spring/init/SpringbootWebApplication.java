@@ -1,5 +1,6 @@
 package com.fet.spring.init;
 
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
@@ -11,6 +12,7 @@ import org.springframework.context.event.EventListener;
 @Configuration
 @SpringBootApplication
 @ComponentScan(basePackages = { "com.fet","estore_sample.estore" })
+@MapperScan(basePackages = "com.fet.db.mybatis")
 public class SpringbootWebApplication extends SpringBootServletInitializer {
 
 	@Override
