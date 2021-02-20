@@ -190,7 +190,6 @@ body.is-webview header ~ main{margin-top:0 !important}
 img{line-height:0}
 hr{border:0;border-top:solid 1px #e8ecf0;margin-top:24px;margin-bottom:30px}
 body.dropdown-open .fui-nav-anchor,body.dropdown-open .fui-nav-tab.is-content-1{z-index:19}
-@font-face{font-family:'icomoon';src:url("../../../resources/common/fonts/icomoon.eot?t121w2");src:url("../../../resources/common/fonts/icomoon.eot?t121w2#iefix") format("embedded-opentype"),url("../../../resources/common/fonts/icomoon.ttf?t121w2") format("truetype"),url("../../../resources/common/fonts/icomoon.woff?t121w2") format("woff"),url("../../../resources/common/fonts/icomoon.svg?t121w2#icomoon") format("svg");font-weight:normal;font-style:normal;font-display:block}
 [class^='icon-'],[class*=' icon-']{font-family:'icomoon',sans-serif !important;speak:none;font-style:normal;font-weight:normal;font-feature-settings:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
 .icon-carousel-next:before{content:'\e901'}
 .icon-carousel-prev:before{content:'\e902'}

@@ -1,12 +1,11 @@
 ﻿
 ﻿$(document).ready(function(){
-	console.log(">>>>>>>>>>>>>>>>>>>>>>");
-	
-	
-	
-	alert("AAAAAAAAAAAAAAAAAAA");
 
-$.ajax({
+})
+
+//點擊撈取alex資料
+function ckickAlexData(){
+	$.ajax({
 		url:"alex3",
 		data:{
 			// "boardType": $("#boardType").val()
@@ -14,15 +13,13 @@ $.ajax({
 		type:"post",
 		dataType:"json",
 		success:function(response, status){
-			
+			console.log(response);
 		},
 		error: function(xtl) {
-			
+			console.log(xtl);
 			
 		}
 	});
 
-})
-
-
+}
 

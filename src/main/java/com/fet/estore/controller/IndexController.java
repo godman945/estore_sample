@@ -1,27 +1,11 @@
 package com.fet.estore.controller;
 
-import java.security.Principal;
-
-import javax.servlet.RequestDispatcher;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-
-import org.springframework.beans.factory.annotation.Value;
-import org.springframework.boot.autoconfigure.web.ServerProperties;
-import org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController;
-import org.springframework.boot.web.servlet.error.DefaultErrorAttributes;
-import org.springframework.boot.web.servlet.error.ErrorController;
-import org.springframework.data.crossstore.ChangeSetPersister.NotFoundException;
-import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.ExceptionHandler;
-import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.bind.annotation.ResponseStatus;
-import org.springframework.web.servlet.ModelAndView;
+
+import net.minidev.json.JSONObject;
 
 @Controller
 public class IndexController  {
@@ -29,17 +13,20 @@ public class IndexController  {
 	
 	//第一支請求
 	@RequestMapping("/alex2")
-	public String helloThymeleaf2(Model model){
-		model.addAttribute("hello","hello Thymeleaf！");
+	public String helloThymeleaf2(Model model) {
+		model.addAttribute("hello", "hello Thymeleaf！");
 		System.out.println("aaa");
 		return "index";
 	}
 	
 	
 	@RequestMapping("/alex3")
-	public String testData(Model model){
+	@ResponseBody
+	public String testData(Model model) {
 		System.out.println("AAAAAAAAAAAA");
-		return "index";
+		JSONObject json = new JSONObject();
+		json.put("alex", "@@@@@");
+		return json.toString();
 	}
 	
 ////	@Autowired
