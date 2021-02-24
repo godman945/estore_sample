@@ -2,6 +2,8 @@ package com.fet.estore.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.util.MultiValueMap;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
@@ -28,6 +30,18 @@ public class IndexController  {
 		json.put("alex", "@@@@@");
 		return json.toString();
 	}
+	
+	@RequestMapping("/alex4")
+	@ResponseBody
+	public String sendData(@RequestBody MultiValueMap<String, Object> formData) {
+		System.out.println("============");
+		System.out.println(formData);
+		
+		JSONObject json = new JSONObject();
+		json.put("alex", "======");
+		return json.toString();
+	}
+	
 	
 ////	@Autowired
 ////    private User user;

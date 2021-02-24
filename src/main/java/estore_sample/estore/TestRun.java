@@ -23,6 +23,7 @@ import org.springframework.transaction.annotation.Transactional;
 import com.fet.db.mybatis.entity.EstoreTutorialAlexEntity;
 import com.fet.db.mybatis.mapper.EstoreTutorialAlexMapper;
 import com.fet.db.oracle.pojo.EstoreTutorialAlex;
+import com.fet.db.oracle.service.estoreTutorialAiko.EstoreTutorialAlexService;
 //import com.fet.estore.core.model.SmsMessage;
 import com.fet.db.oracle.service.estoreTutorialAiko.IEstoreTutorialAlexService;
 import com.fet.spring.init.SpringbootWebApplication;
@@ -191,13 +192,22 @@ public class TestRun {
 		
 	}
 	
-	public static void main(String[] args) {
+	@Transactional
+	public void alex() throws Exception{
+		System.out.println(estoreTutorialAlexService.findAlex());
+	}
+	
+	
+	public static void main(String[] args) throws Exception {
 		
-		System.out.println(TestRun.class);
 		
 		ApplicationContext ctx = new SpringApplicationBuilder(SpringbootWebApplication.class).web(WebApplicationType.NONE).run(args);
 		TestRun testRun = ctx.getBean(TestRun.class);
-		testRun.testMybatis();
+		testRun.alex();
+		
+//		EstoreTutorialAlexService a = ctx.getBean(EstoreTutorialAlexService.class);
+////		
+//		System.out.println(a.findAlex());
 		
 		
 		
