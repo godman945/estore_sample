@@ -13,6 +13,7 @@ import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
 import org.hibernate.query.Query;
+import org.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.WebApplicationType;
 import org.springframework.boot.builder.SpringApplicationBuilder;
@@ -199,11 +200,15 @@ public class TestRun {
 	
 	
 	public static void main(String[] args) throws Exception {
+		JSONObject a = new JSONObject();
 		
+		String x[] = null;
 		
-		ApplicationContext ctx = new SpringApplicationBuilder(SpringbootWebApplication.class).web(WebApplicationType.NONE).run(args);
-		TestRun testRun = ctx.getBean(TestRun.class);
-		testRun.alex();
+//		x[0] = ()a;
+		
+//		ApplicationContext ctx = new SpringApplicationBuilder(SpringbootWebApplication.class).web(WebApplicationType.NONE).run(args);
+//		TestRun testRun = ctx.getBean(TestRun.class);
+//		testRun.alex();
 		
 //		EstoreTutorialAlexService a = ctx.getBean(EstoreTutorialAlexService.class);
 ////		

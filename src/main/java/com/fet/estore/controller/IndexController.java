@@ -13,6 +13,8 @@ import net.minidev.json.JSONObject;
 public class IndexController  {
 
 	
+	
+	
 	//第一支請求
 	@RequestMapping("/alex2")
 	public String helloThymeleaf2(Model model) {
